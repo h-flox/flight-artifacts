@@ -1,10 +1,5 @@
 # Getting Started
-To install FLoX, run the following in your environment:
-```sh
-pip install git+git+https://github.com/nathaniel-hudson/flox
-```
 
-## Pydantic versioning issue
 There is a version for on `pydantic` between two dependencies:
 1. `globus_compute_sdk`
 2. `proxystore`
