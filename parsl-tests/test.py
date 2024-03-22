@@ -41,7 +41,9 @@ def main(args: argparse.Namespace):
         kind="sync",
         debug_mode=True,
         launcher_kind=args.executor,
-        launcher_cfg={"max_workers": args.max_workers},
+        launcher_cfg={
+            "label": "parsl"
+        },  # NOTE (nathaniel-hudson): replace with your config
     )
 
 
@@ -52,7 +54,7 @@ if __name__ == "__main__":
         "-e",
         type=str,
         choices=["process", "thread", "parsl", "globus-compute"],
-        default="process",
+        default="parsl",
     )
     args.add_argument("--max_workers", "-w", type=int, default=1)
     args.add_argument("--workers_nodes", "-n", type=int, default=32)
