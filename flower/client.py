@@ -10,7 +10,7 @@ import torch.nn.functional as F
 from torch.utils.data import DataLoader
 from torchvision.transforms import Compose, Normalize, ToTensor
 from tqdm import tqdm
-
+from torchvision.models import resnet18, resnet50, resnet152
 
 # #############################################################################
 # 1. Regular PyTorch pipeline: nn.Module, train, test, and DataLoader
@@ -103,10 +103,32 @@ parser.add_argument(
     type=int,
     help="Partition of the dataset divided into 3 iid partitions created artificially.",
 )
+parser.add_argument(
+    "--model",
+    choices=[0, 18, 50, 152],
+    required=True,
+    type=int,
+    help="RESNET MODEL",
+)
+parser.add_argument(
+    "--ip",
+    required=True,
+)
 partition_id = parser.parse_args().partition_id
-
+model_id = parser.parse_args().model
+ip = parser.parse_args().ip
 # Load model and data (simple CNN, CIFAR-10)
-net = Net().to(DEVICE)
+#net = Net().to(DEVICE)
+if model_id == 18:
+    net = resnet18(weights=None).to(DEVICE)
+elif model_id ==50:
+    net = resnet50(weights=None).to(DEVICE)
+elif model_id == 152:
+    net = resnet152(weights=None).to(DEVICE)
+else: 
+    print("Unkown RESNET, running simple cnn")
+    net = Net().to(DEVICE)
+
 trainloader, testloader = load_data(partition_id=partition_id)
 
 
@@ -134,6 +156,6 @@ class FlowerClient(fl.client.NumPyClient):
 # Start Flower client
 fl.client.start_client(
     #server_address="198.202.100.14:9898",
-    server_address="198.202.101.231:9898",
+    server_address="%s:9898" % ip,
     client=FlowerClient().to_client(),
 )
