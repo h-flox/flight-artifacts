@@ -26,6 +26,7 @@ class Net(FloxModule):
         self.fc1 = nn.Linear(16 * 5 * 5, 120)
         self.fc2 = nn.Linear(120, 84)
         self.fc3 = nn.Linear(84, 10)
+        self.last_accuracy = 0
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
         x = self.pool(F.relu(self.conv1(x)))
@@ -36,10 +37,13 @@ class Net(FloxModule):
         return self.fc3(x)
 
     def configure_optimizers(self):
-        pass  # NOTE (nathaniel-hudson): Not needed for debugging, just here to get around ABC requirements.
+        return torch.optim.SGD(self.parameters(), lr=0.01)
 
     def training_step(self, batch, batch_idx):
-        pass  # NOTE (nathaniel-hudson): Not needed for debugging, just here to get around ABC requirements.
+        x, y = batch
+        logits = self(x)
+        loss = torch.nn.functional.cross_entropy(logits, y)
+        return loss
 
 
 def main(args: argparse.Namespace):
