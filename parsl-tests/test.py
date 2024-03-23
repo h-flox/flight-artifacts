@@ -91,7 +91,7 @@ if __name__ == "__main__":
         default="parsl",
     )
     args.add_argument("--max_workers", "-w", type=int, default=1)
-    args.add_argument("--workers_nodes", "-n", type=int, default=32)
+    args.add_argument("--workers_nodes", "-n", type=int, default=2)
     args.add_argument("--samples_alpha", "-s", type=float, default=1000.0)
     args.add_argument("--labels_alpha", "-l", type=float, default=1000.0)
     args.add_argument("--rounds", "-r", type=int, default=1)
