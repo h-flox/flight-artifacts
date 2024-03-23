@@ -8,6 +8,12 @@ from torchvision.datasets import FashionMNIST
 from torchvision import transforms
 from pathlib import Path
 
+import parsl
+from parsl.app.app import python_app, bash_app
+from parsl.config import Config
+from parsl.launchers import SrunLauncher
+from parsl.providers import SlurmProvider
+from parsl.executors import HighThroughputExecutor
 
 def main(args: argparse.Namespace):
     flock = create_standard_flock(num_workers=args.workers_nodes)
@@ -42,8 +48,20 @@ def main(args: argparse.Namespace):
         debug_mode=True,
         launcher_kind=args.executor,
         launcher_cfg={
-            "label": "parsl"
-        },  # NOTE (nathaniel-hudson): replace with your config
+            "label": "parsl", 
+             "max_workers_per_node": args.workers_nodes, # NOTE (nathaniel-hudson): replace with your config
+             "provider": SlurmProvider(
+               'debug',
+               account='TG-CCR180005',
+               launcher=SrunLauncher(),
+               scheduler_options='', ##SBATCH ntasks-per-node=128',
+               worker_init='/bin/bash; ~/miniconda3/bib/conda activate flox-test',
+               walltime='00:30:00',
+               init_blocks=1,
+               max_blocks=1,
+               min_blocks=1,
+               nodes_per_block=1)
+        }
     )
 
 
@@ -57,7 +75,7 @@ if __name__ == "__main__":
         default="parsl",
     )
     args.add_argument("--max_workers", "-w", type=int, default=1)
-    args.add_argument("--workers_nodes", "-n", type=int, default=32)
+    args.add_argument("--workers_nodes", "-n", type=int, default=2)
     args.add_argument("--samples_alpha", "-s", type=float, default=1000.0)
     args.add_argument("--labels_alpha", "-l", type=float, default=1000.0)
     args.add_argument("--rounds", "-r", type=int, default=1)
