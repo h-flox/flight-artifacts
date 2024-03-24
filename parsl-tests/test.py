@@ -14,6 +14,15 @@ from flox.data.utils import federated_split
 from flox.flock.factory import create_standard_flock
 from flox.nn import FloxModule
 
+import parsl
+from parsl.app.app import python_app, bash_app
+from parsl.config import Config
+from parsl.launchers import SrunLauncher
+from parsl.providers import SlurmProvider
+from parsl.executors import HighThroughputExecutor
+
+from torchvision.models import alexnet, resnet18, resnet50, resnet152
+from kylenet.kylenet import KyleNet
 
 class Net(FloxModule):
     """Model (simple CNN adapted from 'PyTorch: A 60 Minute Blitz')"""
@@ -69,19 +78,36 @@ def main(args: argparse.Namespace):
         labels_alpha=args.labels_alpha,
         samples_alpha=args.samples_alpha,
     )
+
+    parsl_local = {"label": "local-htex", "max_workers_per_node": args.workers_nodes}
+    parsl_remote  = {
+            "label" : "expanse-htex",
+            "max_workers_per_node": args.workers_nodes, # NOTE (nathaniel-hudson): replace with your config
+            "provider": SlurmProvider(
+                'debug',
+                account='TG-CCR180005',
+                launcher=SrunLauncher(),
+                scheduler_options='', ##SBATCH ntasks-per-node=128',
+                worker_init='/bin/bash; ~/miniconda3/bib/conda activate flox-test; export PYTHONPATH="/home/chard/flox-scaling-tests/parsl-tests"',
+                walltime='00:30:00',
+                init_blocks=1,
+                max_blocks=1,
+                min_blocks=1,
+                nodes_per_block=1)}
+
     flox.federated_fit(
         flock=flock,
         module=Net(),  # nathaniel-hudson: this uses a reasonable model.
-        # module=None, # nathaniel-hudson: this uses a VERY small debug model.
+        #module=None, # nathaniel-hudson: this uses a VERY small debug model.
+        #module=KyleNet(),
+        #module=resnet18(weights=None),
         datasets=fed_data,
         num_global_rounds=args.rounds,
         strategy="fedsgd",
         kind="sync",
         debug_mode=True,
         launcher_kind=args.executor,
-        launcher_cfg=dict(
-            label="Expanse_CPU_Multinode",
-        ),
+        launcher_cfg=parsl_local
     )
 
 
