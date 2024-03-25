@@ -105,10 +105,10 @@ parser.add_argument(
 )
 parser.add_argument(
     "--model",
-    choices=[0, 18, 50, 152],
+    choices=[0, 1, 18, 50, 152],
     required=True,
     type=int,
-    help="RESNET MODEL",
+    help="Model: 0 - 1 layer, 1 KyleNet, Resnet 18, 50, 152",
 )
 parser.add_argument(
     "--ip",
