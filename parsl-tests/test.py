@@ -83,6 +83,7 @@ def main(args: argparse.Namespace):
     parsl_remote  = {
             "label" : "expanse-htex",
             "max_workers_per_node": args.workers_nodes, # NOTE (nathaniel-hudson): replace with your config
+            "worker_ports": (54003,54004),
             "provider": SlurmProvider(
                 'debug',
                 account='TG-CCR180005',
@@ -95,12 +96,24 @@ def main(args: argparse.Namespace):
                 min_blocks=1,
                 nodes_per_block=1)}
 
+    m = None
+    if args.model == 0:
+        m=None
+    elif args.model == 1:
+        m = KyleNet()
+    elif args.model == 18:
+         m=resnet18(weights=None)
+    elif args.model == 50:
+         m=resnet50(weights=None)
+    elif args.model == 152:
+         m=resnet152(weights=None)
+
     flox.federated_fit(
         flock=flock,
-        module=Net(),  # nathaniel-hudson: this uses a reasonable model.
+        #module=Net(),  # nathaniel-hudson: this uses a reasonable model.
         #module=None, # nathaniel-hudson: this uses a VERY small debug model.
         #module=KyleNet(),
-        #module=resnet18(weights=None),
+        module=m,
         datasets=fed_data,
         num_global_rounds=args.rounds,
         strategy="fedsgd",
@@ -119,6 +132,13 @@ if __name__ == "__main__":
         type=str,
         choices=["process", "thread", "parsl", "globus-compute"],
         default="parsl",
+    )
+    args.add_argument(
+        "--model",
+        choices=[0, 1, 18, 50, 152],
+        required=True,
+        type=int,
+        help="Model: 0 - 1 layer, 1 KyleNet, Resnet 18, 50, 152",
     )
     args.add_argument("--max_workers", "-w", type=int, default=1)
     args.add_argument("--workers_nodes", "-n", type=int, default=2)
