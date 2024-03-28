@@ -14,6 +14,7 @@ from torchvision.datasets import FashionMNIST
 from flox.data.utils import federated_split
 from flox.flock.factory import create_standard_flock
 from flox.nn import FloxModule
+from flox.strategies import load_strategy
 
 import parsl
 from parsl.app.app import python_app, bash_app
@@ -92,8 +93,8 @@ def main(args: argparse.Namespace):
         # datasets=fed_data,
         datasets=None,
         num_global_rounds=args.rounds,
-        strategy="fedsgd",
-        kind="sync",
+        strategy=load_strategy("fedasync", alpha=0.5),
+        kind="async",
         debug_mode=True,
         launcher_kind=args.executor,
         launcher_cfg=parsl_config,
