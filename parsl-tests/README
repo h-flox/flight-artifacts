@@ -1,0 +1,7 @@
+Sync run call:
+
+Async run call:
+
+```
+python3 test_async.py --max_workers=4 --model 1 --executor parsl
+```
