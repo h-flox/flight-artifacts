@@ -1,0 +1,1438 @@
+/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/site-packages/pydantic/_internal/_config.py:322: UserWarning: Valid config keys have changed in V2:
+* 'underscore_attrs_are_private' has been removed
+  warnings.warn(message, UserWarning)
+/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/site-packages/pydantic/_internal/_config.py:322: UserWarning: Valid config keys have changed in V2:
+* 'allow_population_by_field_name' has been renamed to 'populate_by_name'
+  warnings.warn(message, UserWarning)
+/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/site-packages/pydantic/_internal/_config.py:322: UserWarning: Valid config keys have changed in V2:
+* 'allow_population_by_field_name' has been renamed to 'populate_by_name'
+* 'underscore_attrs_are_private' has been removed
+  warnings.warn(message, UserWarning)
+start:4231973.934727026
+Selecting parsl_config: {'label': 'local-htex', 'max_workers_per_node': 128, 'provider': LocalProvider(
+    channel=LocalChannel(
+        envs={}, 
+        script_dir=None, 
+        userhome='/home/yadunand/flox-scaling-tests/parsl-tests'
+    ), 
+    cmd_timeout=30, 
+    init_blocks=1, 
+    launcher=SingleNodeLauncher(debug=True, fail_on_any=False), 
+    max_blocks=1, 
+    min_blocks=0, 
+    move_files=None, 
+    nodes_per_block=1, 
+    parallelism=1, 
+    worker_init='export PYTHONPATH=/home/yadunand/flox-scaling-tests/parsl-tests:$PYTHONPATH'
+)}
+federated_fit::async:   0%|          | 0/128 [00:00<?, ?it/s]federated_fit::async:   1%|          | 1/128 [00:07<16:41,  7.89s/it]federated_fit::async:   2%|▏         | 2/128 [00:09<08:23,  3.99s/it]federated_fit::async:   2%|▏         | 3/128 [00:09<04:50,  2.33s/it]federated_fit::async:   4%|▍         | 5/128 [00:09<02:12,  1.08s/it]federated_fit::async:   5%|▍         | 6/128 [00:09<01:37,  1.25it/s]federated_fit::async:   5%|▌         | 7/128 [00:09<01:12,  1.67it/s]federated_fit::async:   7%|▋         | 9/128 [00:10<00:43,  2.75it/s]federated_fit::async:   9%|▊         | 11/128 [00:10<00:28,  4.08it/s]federated_fit::async:  10%|█         | 13/128 [00:10<00:20,  5.56it/s]federated_fit::async:  12%|█▏        | 15/128 [00:10<00:15,  7.14it/s]federated_fit::async:  13%|█▎        | 17/128 [00:10<00:12,  8.68it/s]federated_fit::async:  15%|█▍        | 19/128 [00:10<00:10,  9.99it/s]federated_fit::async:  16%|█▋        | 21/128 [00:10<00:09, 11.13it/s]federated_fit::async:  18%|█▊        | 23/128 [00:11<00:08, 12.27it/s]federated_fit::async:  20%|█▉        | 25/128 [00:11<00:07, 13.20it/s]federated_fit::async:  21%|██        | 27/128 [00:11<00:07, 14.07it/s]federated_fit::async:  23%|██▎       | 29/128 [00:11<00:06, 14.63it/s]federated_fit::async:  24%|██▍       | 31/128 [00:11<00:06, 15.02it/s]federated_fit::async:  26%|██▌       | 33/128 [00:11<00:06, 15.48it/s]federated_fit::async:  27%|██▋       | 35/128 [00:11<00:05, 15.70it/s]federated_fit::async:  29%|██▉       | 37/128 [00:11<00:05, 15.70it/s]federated_fit::async:  30%|███       | 39/128 [00:12<00:05, 15.79it/s]federated_fit::async:  32%|███▏      | 41/128 [00:12<00:05, 16.04it/s]federated_fit::async:  34%|███▎      | 43/128 [00:12<00:05, 15.89it/s]federated_fit::async:  35%|███▌      | 45/128 [00:12<00:05, 16.02it/s]federated_fit::async:  37%|███▋      | 47/128 [00:12<00:04, 16.24it/s]federated_fit::async:  38%|███▊      | 49/128 [00:12<00:04, 16.32it/s]federated_fit::async:  40%|███▉      | 51/128 [00:12<00:04, 16.20it/s]federated_fit::async:  41%|████▏     | 53/128 [00:12<00:04, 16.37it/s]federated_fit::async:  43%|████▎     | 55/128 [00:12<00:04, 16.43it/s]federated_fit::async:  45%|████▍     | 57/128 [00:13<00:04, 16.51it/s]federated_fit::async:  46%|████▌     | 59/128 [00:13<00:04, 16.56it/s]federated_fit::async:  48%|████▊     | 61/128 [00:13<00:04, 16.58it/s]federated_fit::async:  49%|████▉     | 63/128 [00:13<00:03, 16.62it/s]federated_fit::async:  51%|█████     | 65/128 [00:13<00:03, 16.66it/s]federated_fit::async:  52%|█████▏    | 67/128 [00:13<00:03, 16.63it/s]federated_fit::async:  54%|█████▍    | 69/128 [00:13<00:03, 16.69it/s]federated_fit::async:  55%|█████▌    | 71/128 [00:13<00:03, 16.62it/s]federated_fit::async:  58%|█████▊    | 74/128 [00:14<00:02, 18.25it/s]federated_fit::async:  59%|█████▉    | 76/128 [00:14<00:02, 17.79it/s]federated_fit::async:  61%|██████    | 78/128 [00:14<00:02, 17.42it/s]federated_fit::async:  62%|██████▎   | 80/128 [00:14<00:02, 17.17it/s]federated_fit::async:  64%|██████▍   | 82/128 [00:14<00:02, 17.01it/s]federated_fit::async:  66%|██████▌   | 84/128 [00:14<00:02, 16.98it/s]federated_fit::async:  67%|██████▋   | 86/128 [00:14<00:02, 16.89it/s]federated_fit::async:  69%|██████▉   | 88/128 [00:14<00:02, 16.51it/s]federated_fit::async:  70%|███████   | 90/128 [00:15<00:02, 16.56it/s]federated_fit::async:  72%|███████▏  | 92/128 [00:15<00:02, 16.49it/s]federated_fit::async:  73%|███████▎  | 94/128 [00:15<00:02, 16.65it/s]federated_fit::async:  75%|███████▌  | 96/128 [00:15<00:01, 16.70it/s]federated_fit::async:  77%|███████▋  | 98/128 [00:15<00:01, 16.70it/s]federated_fit::async:  78%|███████▊  | 100/128 [00:15<00:01, 16.71it/s]federated_fit::async:  80%|███████▉  | 102/128 [00:15<00:01, 16.67it/s]federated_fit::async:  81%|████████▏ | 104/128 [00:15<00:01, 16.72it/s]federated_fit::async:  83%|████████▎ | 106/128 [00:16<00:01, 16.74it/s]federated_fit::async:  84%|████████▍ | 108/128 [00:16<00:01, 16.67it/s]federated_fit::async:  86%|████████▌ | 110/128 [00:16<00:01, 16.66it/s]federated_fit::async:  88%|████████▊ | 112/128 [00:16<00:01, 11.43it/s]federated_fit::async:  95%|█████████▌| 122/128 [00:16<00:00, 28.66it/s]federated_fit::async: 100%|██████████| 128/128 [00:16<00:00,  7.62it/s]
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+10 10
+conv1.weight
+conv1.bias
+conv2.weight
+conv2.bias
+fc1.weight
+fc1.bias
+fc2.weight
+fc2.bias
+fc3.weight
+fc3.bias
+end:4232029.19411852
+❯ Finished in 55.259391494095325 seconds.
