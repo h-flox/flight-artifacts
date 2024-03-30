@@ -1,0 +1,24 @@
+#!/bin/bash
+#SBATCH --job-name="flower-test"
+#SBATCH --output="flower-test-out.1.multi.out"
+#SBATCH --partition=compute
+#SBATCH --nodes=17
+#SBATCH --ntasks-per-node=1
+#SBATCH --mem=240G 
+#SBATCH --account=chi150
+#SBATCH --export=ALL
+#SBATCH -t 01:00:00
+
+export NODES=$SLURM_JOB_NUM_NODES
+ipad=$(hostname -I | awk '{print $3}')
+echo $ipad
+module load anaconda3/2021.05
+conda activate flower_scale
+for num_nodes in 2 4 8 16
+do
+
+	timeout 600 python ~/kyle/flower/server.py --clients $((128 * $num_nodes)) --ip $ipad --model 1 & 
+
+	srun --ntasks $num_nodes -l --exclude=$SLURMD_NODENAME ~/kyle/flower/scale-run.sh 128 1 $ipad $num_nodes
+	wait
+done
