@@ -1,0 +1,31 @@
+/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/site-packages/pydantic/_internal/_config.py:322: UserWarning: Valid config keys have changed in V2:
+* 'underscore_attrs_are_private' has been removed
+  warnings.warn(message, UserWarning)
+/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/site-packages/pydantic/_internal/_config.py:322: UserWarning: Valid config keys have changed in V2:
+* 'allow_population_by_field_name' has been renamed to 'populate_by_name'
+  warnings.warn(message, UserWarning)
+/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/site-packages/pydantic/_internal/_config.py:322: UserWarning: Valid config keys have changed in V2:
+* 'allow_population_by_field_name' has been renamed to 'populate_by_name'
+* 'underscore_attrs_are_private' has been removed
+  warnings.warn(message, UserWarning)
+start:9320124.892414777
+Selecting parsl_config: {'label': 'local-htex', 'max_workers_per_node': 4, 'provider': LocalProvider(
+    channel=LocalChannel(
+        envs={}, 
+        script_dir=None, 
+        userhome='/home/yadunand/flox-scaling-tests/parsl-tests'
+    ), 
+    cmd_timeout=30, 
+    init_blocks=1, 
+    launcher=SingleNodeLauncher(debug=True, fail_on_any=False), 
+    max_blocks=1, 
+    min_blocks=0, 
+    move_files=None, 
+    nodes_per_block=1, 
+    parallelism=1, 
+    worker_init='source ~/setup_parsl_test_env.sh; export PYTHONPATH=/home/yadunand/flox-scaling-tests/parsl-tests:$PYTHONPATH'
+)}
+Yadu : setting RedisTransfer to 127.0.0.1
+federated_fit::sync:   0%|          | 0/1 [00:00<?, ?it/s]federated_fit::sync: 100%|██████████| 1/1 [00:05<00:00,  5.01s/it]federated_fit::sync: 100%|██████████| 1/1 [00:05<00:00,  5.02s/it]
+end:9320149.058152933
+❯ Finished in 24.165738156065345 seconds.
