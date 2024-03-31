@@ -8,7 +8,7 @@
 * 'allow_population_by_field_name' has been renamed to 'populate_by_name'
 * 'underscore_attrs_are_private' has been removed
   warnings.warn(message, UserWarning)
-start:4414540.272690122
+start:3837331.706013211
 Selecting parsl_config: {'label': 'local-htex', 'max_workers_per_node': 128, 'provider': LocalProvider(
     channel=LocalChannel(
         envs={}, 
@@ -25,84 +25,8 @@ Selecting parsl_config: {'label': 'local-htex', 'max_workers_per_node': 128, 'pr
     parallelism=1, 
     worker_init='source ~/setup_parsl_test_env.sh; export PYTHONPATH=/home/yadunand/flox-scaling-tests/parsl-tests:$PYTHONPATH'
 )}
-priming_done:4414570.268142316
+priming_done:3837365.233850615
 Yadu : setting RedisTransfer to 127.0.0.1
-federated_fit::sync:   0%|          | 0/1 [00:00<?, ?it/s]Traceback (most recent call last):
-  File "/home/yadunand/flox-scaling-tests/parsl-tests/test.py", line 140, in <module>
-    main(parsed_args)
-  File "/home/yadunand/flox-scaling-tests/parsl-tests/test.py", line 92, in main
-    flox.federated_fit(
-  File "/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/site-packages/flox/runtime/fit.py", line 140, in federated_fit
-    trained_module, history = process.start(debug_mode=debug_mode)
-                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/site-packages/flox/runtime/process/process_sync_v2.py", line 75, in start
-    step_result = self.step().result()
-                  ^^^^^^^^^^^^^^^^^^^^
-  File "/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/concurrent/futures/_base.py", line 456, in result
-    return self.__get_result()
-           ^^^^^^^^^^^^^^^^^^^
-  File "/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
-    raise self._exception
-  File "/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/site-packages/parsl/executors/high_throughput/executor.py", line 520, in _queue_management_worker
-    s.reraise()
-  File "/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/site-packages/parsl/app/errors.py", line 118, in reraise
-    raise v
-  File "/home/yadunand/miniconda3/envs/parsl_py3.11/bin/process_worker_pool.py", line 760, in worker
-    result = execute_task(req['buffer'], mpi_launcher=mpi_launcher)
-^^^^^^^^^^^^^^^
-  File "/home/yadunand/miniconda3/envs/parsl_py3.11/bin/process_worker_pool.py", line 620, in execute_task
-    exec(code, user_ns, user_ns)
-      ^^^^^^^^^^^^^^^^^
-  File "<string>", line 1, in <module>
-  File "/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/site-packages/flox/jobs/aggregation.py", line 38, in __call__
-    idx: NodeID = result.node_idx
-^^^^^^^^^^^^^^^
-  File "/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/site-packages/lazy_object_proxy/slots.py", line 210, in __getattr__
-    return getattr(self.__wrapped__, name)
-^^^^^^^^^^^^^^^
-  File "/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/site-packages/lazy_object_proxy/slots.py", line 103, in __wrapped__
-    target = factory()
-^^^^^^^^^^^^^^^
-  File "/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/site-packages/proxystore/store/factory.py", line 80, in __call__
-    obj = self.resolve()
-^^^^^^^^^^^
-  File "/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/site-packages/proxystore/store/factory.py", line 120, in resolve
-    obj = store.get(
-^^^^^^^^^^^^^^^
-  File "/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/site-packages/proxystore/store/base.py", line 431, in get
-    value = self.connector.get(key)
-^^^^^^^^^^^^^^^
-  File "/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/site-packages/proxystore/connectors/redis.py", line 132, in get
-    return self._redis_client.get(key.redis_key)
-  ^^^^^^^^^^^^^^^^^
-  File "/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/site-packages/redis/commands/core.py", line 1830, in get
-    return self.execute_command("GET", name)
-  ^^^^^^^^^^^^^^^^^
-  File "/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/site-packages/redis/client.py", line 543, in execute_command
-    return conn.retry.call_with_retry(
-^^^^^^^^^^^^^^^
-  File "/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/site-packages/redis/retry.py", line 46, in call_with_retry
-    return do()
-^^^^^^^^^^^
-  File "/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/site-packages/redis/client.py", line 544, in <lambda>
-    lambda: self._send_command_parse_response(
-^^^^^^^^^^^
-  File "/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/site-packages/redis/client.py", line 520, in _send_command_parse_response
-    return self.parse_response(conn, command_name, **options)
-  ^^^^^^^^^^^^^^^^^
-  File "/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/site-packages/redis/client.py", line 560, in parse_response
-    response = connection.read_response()
-^^^^^^^^^^^
-  File "/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/site-packages/redis/connection.py", line 512, in read_response
-    response = self._parser.read_response(disable_decoding=disable_decoding)
-^^^^^^^^^^^
-  File "/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/site-packages/redis/_parsers/resp2.py", line 15, in read_response
-    result = self._read_response(disable_decoding=disable_decoding)
-^^^^^^^^^^^^^^^
-  File "/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/site-packages/redis/_parsers/resp2.py", line 54, in _read_response
-    response = self._buffer.read(int(response))
-^^^^^^^^^^^^^^^
-  File "/home/yadunand/miniconda3/envs/parsl_py3.11/lib/python3.11/site-packages/redis/_parsers/socket.py", line 107, in read
-    data += self._buffer.read(missing)
-^^^^^^^^^^^^^^^
-MemoryError
+federated_fit::sync:   0%|          | 0/1 [00:00<?, ?it/s]federated_fit::sync: 100%|██████████| 1/1 [08:23<00:00, 503.16s/it]federated_fit::sync: 100%|██████████| 1/1 [08:23<00:00, 503.16s/it]
+end:3837868.471478513
+❯ Finished in 536.7654653019272 seconds.
