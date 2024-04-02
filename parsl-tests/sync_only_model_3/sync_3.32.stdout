@@ -8,7 +8,7 @@
 * 'allow_population_by_field_name' has been renamed to 'populate_by_name'
 * 'underscore_attrs_are_private' has been removed
   warnings.warn(message, UserWarning)
-start:4526421.855190182
+start:4578003.028624644
 Selecting parsl_config: {'label': 'local-htex', 'max_workers_per_node': 32, 'provider': LocalProvider(
     channel=LocalChannel(
         envs={}, 
@@ -25,6 +25,7 @@ Selecting parsl_config: {'label': 'local-htex', 'max_workers_per_node': 32, 'pro
     parallelism=1, 
     worker_init='source ~/setup_parsl_test_env.v2.sh; export PYTHONPATH=/home/yadunand/flox-scaling-tests/parsl-tests:$PYTHONPATH'
 )}
-federated_fit::sync:   0%|          | 0/1 [00:00<?, ?it/s]federated_fit::sync: 100%|██████████| 1/1 [00:10<00:00, 10.43s/it]federated_fit::sync: 100%|██████████| 1/1 [00:10<00:00, 10.43s/it]
-end:4526455.998885228
-❯ Finished in 34.1436950461939 seconds.
+priming_done:4578024.288209767
+federated_fit::sync:   0%|          | 0/1 [00:00<?, ?it/s]federated_fit::sync: 100%|██████████| 1/1 [00:09<00:00,  9.98s/it]federated_fit::sync: 100%|██████████| 1/1 [00:09<00:00,  9.98s/it]
+end:4578034.308317523
+❯ Finished in 31.279692879877985 seconds.
