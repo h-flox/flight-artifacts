@@ -8,7 +8,7 @@
 * 'allow_population_by_field_name' has been renamed to 'populate_by_name'
 * 'underscore_attrs_are_private' has been removed
   warnings.warn(message, UserWarning)
-start:9288840.769785265
+start:4460620.298047875
 Selecting parsl_config: {'label': 'expanse-htex', 'max_workers_per_node': 128, 'provider': LocalProvider(
     channel=LocalChannel(
         envs={}, 
@@ -25,8 +25,8 @@ Selecting parsl_config: {'label': 'expanse-htex', 'max_workers_per_node': 128, '
     parallelism=1, 
     worker_init='source ~/setup_parsl_test_env.sh; export PYTHONPATH=/home/yadunand/flox-scaling-tests/parsl-tests:$PYTHONPATH'
 )}
-priming_done:9288949.415174792
-Yadu : setting RedisTransfer to 10.22.3.3
-federated_fit::sync:   0%|          | 0/1 [00:00<?, ?it/s]federated_fit::sync: 100%|██████████| 1/1 [09:28<00:00, 568.37s/it]federated_fit::sync: 100%|██████████| 1/1 [09:28<00:00, 568.37s/it]
-end:9289517.842795828
-❯ Finished in 677.0730105638504 seconds.
+priming_done:4460745.642232049
+Yadu : setting RedisTransfer to 10.22.3.12
+federated_fit::sync:   0%|          | 0/1 [00:00<?, ?it/s]federated_fit::sync: 100%|██████████| 1/1 [08:35<00:00, 515.57s/it]federated_fit::sync: 100%|██████████| 1/1 [08:35<00:00, 515.57s/it]
+end:4461261.319900592
+❯ Finished in 641.0218527168036 seconds.
