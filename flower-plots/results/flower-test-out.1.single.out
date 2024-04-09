@@ -1,0 +1,103 @@
+198.202.102.40
+
+CommandNotFoundError: Your shell has not been properly configured to use 'conda activate'.
+To initialize your shell, run
+
+    $ conda init <SHELL_NAME>
+
+Currently supported shells are:
+  - bash
+  - fish
+  - tcsh
+  - xonsh
+  - zsh
+  - powershell
+
+See 'conda init --help' for more information and options.
+
+IMPORTANT: You may need to close and restart your shell after running 'conda init'.
+
+
+srun: warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+/usr/bin/logger: /cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/anaconda3-2021.05-q4munrgvh7qp4o7r3nzcdkbuph4z7375/lib/libuuid.so.1: no version information available (required by /lib64/libblkid.so.1)
+/usr/bin/logger: /cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/anaconda3-2021.05-q4munrgvh7qp4o7r3nzcdkbuph4z7375/lib/libuuid.so.1: no version information available (required by /lib64/libblkid.so.1)
+0: Starting client 1
+WARNING flwr 2024-03-29 21:14:43,545 | fedavg.py:118 | 
+Setting `min_available_clients` lower than `min_fit_clients` or
+`min_evaluate_clients` can cause the server to fail when there are too few clients
+connected to the server. `min_available_clients` must be set to a value larger
+than or equal to the values of `min_fit_clients` and `min_evaluate_clients`.
+
+INFO flwr 2024-03-29 21:14:43,546 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=1, round_timeout=None)
+INFO flwr 2024-03-29 21:14:43,575 | app.py:176 | Flower ECE: gRPC server running (1 rounds), SSL is disabled
+INFO flwr 2024-03-29 21:14:43,576 | server.py:89 | Initializing global parameters
+INFO flwr 2024-03-29 21:14:43,576 | server.py:276 | Requesting initial parameters from one random client
+0: Traceback (most recent call last):
+0:   File "client.py", line 143, in <module>
+0:     net = KyleNet().to(DEVICE)
+0:   File "client.py", line 40, in __init__
+0:     super(Net, self).__init__()
+0: TypeError: super(type, obj): obj must be an instance or subtype of type
+srun: warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+/usr/bin/logger: /cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/anaconda3-2021.05-q4munrgvh7qp4o7r3nzcdkbuph4z7375/lib/libuuid.so.1: no version information available (required by /lib64/libblkid.so.1)
+/usr/bin/logger: /cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/anaconda3-2021.05-q4munrgvh7qp4o7r3nzcdkbuph4z7375/lib/libuuid.so.1: no version information available (required by /lib64/libblkid.so.1)
+0: Starting client 1
+0: Starting client 2
+INFO flwr 2024-03-29 21:24:43,383 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=1, round_timeout=None)
+INFO flwr 2024-03-29 21:24:43,398 | app.py:176 | Flower ECE: gRPC server running (1 rounds), SSL is disabled
+INFO flwr 2024-03-29 21:24:43,398 | server.py:89 | Initializing global parameters
+INFO flwr 2024-03-29 21:24:43,398 | server.py:276 | Requesting initial parameters from one random client
+0: Traceback (most recent call last):
+0:   File "client.py", line 143, in <module>
+0:     net = KyleNet().to(DEVICE)
+0:   File "client.py", line 40, in __init__
+0:     super(Net, self).__init__()
+0: TypeError: super(type, obj): obj must be an instance or subtype of type
+0: Traceback (most recent call last):
+0:   File "client.py", line 143, in <module>
+0:     net = KyleNet().to(DEVICE)
+0:   File "client.py", line 40, in __init__
+0:     super(Net, self).__init__()
+0: TypeError: super(type, obj): obj must be an instance or subtype of type
+srun: warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+/usr/bin/logger: /cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/anaconda3-2021.05-q4munrgvh7qp4o7r3nzcdkbuph4z7375/lib/libuuid.so.1: no version information available (required by /lib64/libblkid.so.1)
+/usr/bin/logger: /cm/shared/apps/spack/0.17.3/cpu/b/opt/spack/linux-rocky8-zen/gcc-8.5.0/anaconda3-2021.05-q4munrgvh7qp4o7r3nzcdkbuph4z7375/lib/libuuid.so.1: no version information available (required by /lib64/libblkid.so.1)
+0: Starting client 1
+0: Starting client 2
+0: Starting client 3
+0: Starting client 4
+INFO flwr 2024-03-29 21:34:43,416 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=1, round_timeout=None)
+INFO flwr 2024-03-29 21:34:43,434 | app.py:176 | Flower ECE: gRPC server running (1 rounds), SSL is disabled
+INFO flwr 2024-03-29 21:34:43,434 | server.py:89 | Initializing global parameters
+INFO flwr 2024-03-29 21:34:43,434 | server.py:276 | Requesting initial parameters from one random client
+0: Traceback (most recent call last):
+0:   File "client.py", line 143, in <module>
+0:     net = KyleNet().to(DEVICE)
+0:   File "client.py", line 40, in __init__
+0:     super(Net, self).__init__()
+0: TypeError: super(type, obj): obj must be an instance or subtype of type
+0: Traceback (most recent call last):
+0:   File "client.py", line 143, in <module>
+0:     net = KyleNet().to(DEVICE)
+0:   File "client.py", line 40, in __init__
+0:     super(Net, self).__init__()
+0: TypeError: super(type, obj): obj must be an instance or subtype of type
+0: Traceback (most recent call last):
+0:   File "client.py", line 143, in <module>
+0:     net = KyleNet().to(DEVICE)
+0:   File "client.py", line 40, in __init__
+0:     super(Net, self).__init__()
+0: TypeError: super(type, obj): obj must be an instance or subtype of type
+0: Traceback (most recent call last):
+0:   File "client.py", line 143, in <module>
+0:     net = KyleNet().to(DEVICE)
+0:   File "client.py", line 40, in __init__
+0:     super(Net, self).__init__()
+0: TypeError: super(type, obj): obj must be an instance or subtype of type
+srun: warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+srun: error: Unable to create step for job 29586142: Job/step already completing or completed
+INFO flwr 2024-03-29 21:44:43,351 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=1, round_timeout=None)
+INFO flwr 2024-03-29 21:44:43,367 | app.py:176 | Flower ECE: gRPC server running (1 rounds), SSL is disabled
+INFO flwr 2024-03-29 21:44:43,367 | server.py:89 | Initializing global parameters
+INFO flwr 2024-03-29 21:44:43,367 | server.py:276 | Requesting initial parameters from one random client
+slurmstepd: error: *** JOB 29586142 ON exp-8-51 CANCELLED AT 2024-03-29T21:45:08 DUE TO TIME LIMIT ***

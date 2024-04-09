@@ -1,0 +1,1906 @@
+198.202.103.176
+/cm/local/apps/slurm/var/spool/job29593266/slurm_script: line 17: /home/chard/miniconda3/bib/conda: No such file or directory
+srun: warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+0: Starting client 1
+WARNING flwr 2024-03-30 06:33:30,243 | fedavg.py:118 | 
+Setting `min_available_clients` lower than `min_fit_clients` or
+`min_evaluate_clients` can cause the server to fail when there are too few clients
+connected to the server. `min_available_clients` must be set to a value larger
+than or equal to the values of `min_fit_clients` and `min_evaluate_clients`.
+
+INFO flwr 2024-03-30 06:33:30,243 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=1, round_timeout=None)
+INFO flwr 2024-03-30 06:33:30,258 | app.py:176 | Flower ECE: gRPC server running (1 rounds), SSL is disabled
+INFO flwr 2024-03-30 06:33:30,258 | server.py:89 | Initializing global parameters
+INFO flwr 2024-03-30 06:33:30,258 | server.py:276 | Requesting initial parameters from one random client
+0: INFO flwr 2024-03-30 06:33:34,440 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:33:34,441 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:33:34,442 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:33:34,443 | connection.py:55 | ChannelConnectivity.READY
+INFO flwr 2024-03-30 06:33:34,645 | server.py:280 | Received initial parameters from one random client
+INFO flwr 2024-03-30 06:33:34,645 | server.py:91 | Evaluating initial parameters
+INFO flwr 2024-03-30 06:33:34,645 | server.py:104 | FL starting
+DEBUG flwr 2024-03-30 06:33:34,645 | server.py:222 | fit_round 1: strategy sampled 1 clients (out of 1)
+DEBUG flwr 2024-03-30 06:33:35,310 | server.py:236 | fit_round 1 received 1 results and 0 failures
+WARNING flwr 2024-03-30 06:33:35,350 | fedavg.py:250 | No fit_metrics_aggregation_fn provided
+INFO flwr 2024-03-30 06:33:35,351 | client_manager.py:196 | Sampling failed: number of available clients (1) is less than number of requested clients (2).
+INFO flwr 2024-03-30 06:33:35,352 | server.py:171 | evaluate_round 1: no clients selected, cancel
+INFO flwr 2024-03-30 06:33:35,352 | server.py:153 | FL finished in 0.7064375095069408
+INFO flwr 2024-03-30 06:33:35,352 | app.py:226 | app_fit: losses_distributed []
+INFO flwr 2024-03-30 06:33:35,352 | app.py:227 | app_fit: metrics_distributed_fit {}
+INFO flwr 2024-03-30 06:33:35,352 | app.py:228 | app_fit: metrics_distributed {}
+INFO flwr 2024-03-30 06:33:35,352 | app.py:229 | app_fit: losses_centralized []
+INFO flwr 2024-03-30 06:33:35,352 | app.py:230 | app_fit: metrics_centralized {}
+0: DEBUG flwr 2024-03-30 06:33:35,359 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:33:35,359 | app.py:398 | Disconnect and shut down
+srun: warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+0: Starting client 1
+0: Starting client 2
+INFO flwr 2024-03-30 06:33:38,220 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=1, round_timeout=None)
+INFO flwr 2024-03-30 06:33:38,248 | app.py:176 | Flower ECE: gRPC server running (1 rounds), SSL is disabled
+INFO flwr 2024-03-30 06:33:38,306 | server.py:89 | Initializing global parameters
+INFO flwr 2024-03-30 06:33:38,306 | server.py:276 | Requesting initial parameters from one random client
+0: INFO flwr 2024-03-30 06:33:42,389 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:33:42,390 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:33:42,390 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:33:42,391 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:33:42,405 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:33:42,405 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:33:42,406 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:33:42,406 | connection.py:55 | ChannelConnectivity.READY
+INFO flwr 2024-03-30 06:33:42,598 | server.py:280 | Received initial parameters from one random client
+INFO flwr 2024-03-30 06:33:42,598 | server.py:91 | Evaluating initial parameters
+INFO flwr 2024-03-30 06:33:42,598 | server.py:104 | FL starting
+DEBUG flwr 2024-03-30 06:33:42,599 | server.py:222 | fit_round 1: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2024-03-30 06:33:43,848 | server.py:236 | fit_round 1 received 2 results and 0 failures
+WARNING flwr 2024-03-30 06:33:43,914 | fedavg.py:250 | No fit_metrics_aggregation_fn provided
+DEBUG flwr 2024-03-30 06:33:43,915 | server.py:173 | evaluate_round 1: strategy sampled 2 clients (out of 2)
+DEBUG flwr 2024-03-30 06:33:44,181 | server.py:187 | evaluate_round 1 received 0 results and 2 failures
+INFO flwr 2024-03-30 06:33:44,181 | server.py:153 | FL finished in 1.5829605367034674
+INFO flwr 2024-03-30 06:33:44,182 | app.py:226 | app_fit: losses_distributed []
+INFO flwr 2024-03-30 06:33:44,182 | app.py:227 | app_fit: metrics_distributed_fit {}
+INFO flwr 2024-03-30 06:33:44,182 | app.py:228 | app_fit: metrics_distributed {}
+INFO flwr 2024-03-30 06:33:44,182 | app.py:229 | app_fit: losses_centralized []
+INFO flwr 2024-03-30 06:33:44,182 | app.py:230 | app_fit: metrics_centralized {}
+0: DEBUG flwr 2024-03-30 06:33:44,187 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:33:44,187 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:33:44,191 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:33:44,191 | app.py:398 | Disconnect and shut down
+srun: warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+0: Starting client 1
+0: Starting client 2
+0: Starting client 3
+0: Starting client 4
+INFO flwr 2024-03-30 06:33:45,234 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=1, round_timeout=None)
+INFO flwr 2024-03-30 06:33:45,240 | app.py:176 | Flower ECE: gRPC server running (1 rounds), SSL is disabled
+INFO flwr 2024-03-30 06:33:45,248 | server.py:89 | Initializing global parameters
+INFO flwr 2024-03-30 06:33:45,261 | server.py:276 | Requesting initial parameters from one random client
+0: INFO flwr 2024-03-30 06:33:48,432 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: INFO flwr 2024-03-30 06:33:48,432 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:33:48,433 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:33:48,433 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:33:48,434 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:33:48,434 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:33:48,434 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:33:48,434 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:33:48,442 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:33:48,443 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:33:48,444 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:33:48,444 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:33:48,444 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:33:48,446 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:33:48,446 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:33:48,447 | connection.py:55 | ChannelConnectivity.READY
+INFO flwr 2024-03-30 06:33:48,636 | server.py:280 | Received initial parameters from one random client
+INFO flwr 2024-03-30 06:33:48,636 | server.py:91 | Evaluating initial parameters
+INFO flwr 2024-03-30 06:33:48,636 | server.py:104 | FL starting
+DEBUG flwr 2024-03-30 06:33:48,636 | server.py:222 | fit_round 1: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-30 06:33:50,848 | server.py:236 | fit_round 1 received 4 results and 0 failures
+WARNING flwr 2024-03-30 06:33:50,958 | fedavg.py:250 | No fit_metrics_aggregation_fn provided
+DEBUG flwr 2024-03-30 06:33:50,960 | server.py:173 | evaluate_round 1: strategy sampled 4 clients (out of 4)
+DEBUG flwr 2024-03-30 06:33:51,444 | server.py:187 | evaluate_round 1 received 0 results and 4 failures
+INFO flwr 2024-03-30 06:33:51,445 | server.py:153 | FL finished in 2.8087037466466427
+INFO flwr 2024-03-30 06:33:51,446 | app.py:226 | app_fit: losses_distributed []
+INFO flwr 2024-03-30 06:33:51,446 | app.py:227 | app_fit: metrics_distributed_fit {}
+INFO flwr 2024-03-30 06:33:51,446 | app.py:228 | app_fit: metrics_distributed {}
+INFO flwr 2024-03-30 06:33:51,446 | app.py:229 | app_fit: losses_centralized []
+INFO flwr 2024-03-30 06:33:51,446 | app.py:230 | app_fit: metrics_centralized {}
+0: DEBUG flwr 2024-03-30 06:33:51,453 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:33:51,453 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:33:51,455 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:33:51,455 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:33:51,456 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:33:51,456 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:33:51,457 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:33:51,457 | app.py:398 | Disconnect and shut down
+srun: warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+0: Starting client 1
+0: Starting client 2
+0: Starting client 3
+0: Starting client 4
+0: Starting client 5
+0: Starting client 6
+0: Starting client 7
+0: Starting client 8
+INFO flwr 2024-03-30 06:33:52,568 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=1, round_timeout=None)
+INFO flwr 2024-03-30 06:33:52,574 | app.py:176 | Flower ECE: gRPC server running (1 rounds), SSL is disabled
+INFO flwr 2024-03-30 06:33:52,583 | server.py:89 | Initializing global parameters
+INFO flwr 2024-03-30 06:33:52,587 | server.py:276 | Requesting initial parameters from one random client
+0: INFO flwr 2024-03-30 06:33:56,301 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:33:56,302 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:33:56,303 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:33:56,303 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:33:56,307 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:33:56,308 | connection.py:55 | ChannelConnectivity.IDLE
+0: INFO flwr 2024-03-30 06:33:56,308 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:33:56,308 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:33:56,309 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:33:56,309 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:33:56,309 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:33:56,310 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:33:56,348 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:33:56,349 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:33:56,351 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:33:56,352 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:33:56,363 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:33:56,363 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:33:56,364 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:33:56,365 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:33:56,373 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:33:56,374 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:33:56,375 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:33:56,375 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:33:56,386 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:33:56,387 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:33:56,387 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:33:56,388 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:33:56,398 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:33:56,398 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:33:56,399 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:33:56,400 | connection.py:55 | ChannelConnectivity.READY
+INFO flwr 2024-03-30 06:33:56,504 | server.py:280 | Received initial parameters from one random client
+INFO flwr 2024-03-30 06:33:56,504 | server.py:91 | Evaluating initial parameters
+INFO flwr 2024-03-30 06:33:56,504 | server.py:104 | FL starting
+DEBUG flwr 2024-03-30 06:33:56,505 | server.py:222 | fit_round 1: strategy sampled 8 clients (out of 8)
+DEBUG flwr 2024-03-30 06:34:00,395 | server.py:236 | fit_round 1 received 8 results and 0 failures
+WARNING flwr 2024-03-30 06:34:00,588 | fedavg.py:250 | No fit_metrics_aggregation_fn provided
+DEBUG flwr 2024-03-30 06:34:00,590 | server.py:173 | evaluate_round 1: strategy sampled 8 clients (out of 8)
+DEBUG flwr 2024-03-30 06:34:01,496 | server.py:187 | evaluate_round 1 received 0 results and 8 failures
+INFO flwr 2024-03-30 06:34:01,496 | server.py:153 | FL finished in 4.991803029552102
+INFO flwr 2024-03-30 06:34:01,499 | app.py:226 | app_fit: losses_distributed []
+INFO flwr 2024-03-30 06:34:01,499 | app.py:227 | app_fit: metrics_distributed_fit {}
+INFO flwr 2024-03-30 06:34:01,499 | app.py:228 | app_fit: metrics_distributed {}
+INFO flwr 2024-03-30 06:34:01,499 | app.py:229 | app_fit: losses_centralized []
+INFO flwr 2024-03-30 06:34:01,499 | app.py:230 | app_fit: metrics_centralized {}
+0: DEBUG flwr 2024-03-30 06:34:01,506 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:01,506 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:01,507 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:01,508 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:01,508 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:01,508 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:01,508 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:01,509 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:01,510 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:01,510 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:01,511 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:01,511 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:01,511 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:01,511 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:01,512 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:01,512 | app.py:398 | Disconnect and shut down
+srun: warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+INFO flwr 2024-03-30 06:34:02,650 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=1, round_timeout=None)
+INFO flwr 2024-03-30 06:34:02,656 | app.py:176 | Flower ECE: gRPC server running (1 rounds), SSL is disabled
+INFO flwr 2024-03-30 06:34:02,669 | server.py:89 | Initializing global parameters
+INFO flwr 2024-03-30 06:34:02,686 | server.py:276 | Requesting initial parameters from one random client
+0: Starting client 1
+0: Starting client 2
+0: Starting client 3
+0: Starting client 4
+0: Starting client 5
+0: Starting client 6
+0: Starting client 7
+0: Starting client 8
+0: Starting client 9
+0: Starting client 10
+0: Starting client 11
+0: Starting client 12
+0: Starting client 13
+0: Starting client 14
+0: Starting client 15
+0: Starting client 16
+0: INFO flwr 2024-03-30 06:34:07,604 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: INFO flwr 2024-03-30 06:34:07,605 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:07,605 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:07,606 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:07,606 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:07,607 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:07,607 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:07,608 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:07,609 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:07,610 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:07,611 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:07,624 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: INFO flwr 2024-03-30 06:34:07,625 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:07,625 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:07,626 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:07,626 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:07,627 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:07,627 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:07,627 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:07,628 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:07,628 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:07,628 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:07,639 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:07,640 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:07,640 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:07,641 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:07,657 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:07,657 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:07,658 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: INFO flwr 2024-03-30 06:34:07,658 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:07,658 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:07,659 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:07,660 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:07,661 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:07,667 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:07,668 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:07,669 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:07,670 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: INFO flwr 2024-03-30 06:34:07,669 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:07,670 | connection.py:55 | ChannelConnectivity.IDLE
+0: INFO flwr 2024-03-30 06:34:07,671 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:07,671 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:07,671 | connection.py:55 | ChannelConnectivity.IDLE
+0: INFO flwr 2024-03-30 06:34:07,671 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:07,672 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:07,672 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:07,672 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:07,672 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:07,672 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:07,672 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:07,673 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:07,673 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:07,673 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:07,678 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:07,679 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:07,680 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:07,680 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:07,684 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:07,685 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:07,686 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:07,686 | connection.py:55 | ChannelConnectivity.READY
+INFO flwr 2024-03-30 06:34:07,805 | server.py:280 | Received initial parameters from one random client
+INFO flwr 2024-03-30 06:34:07,805 | server.py:91 | Evaluating initial parameters
+INFO flwr 2024-03-30 06:34:07,805 | server.py:104 | FL starting
+DEBUG flwr 2024-03-30 06:34:07,805 | server.py:222 | fit_round 1: strategy sampled 16 clients (out of 16)
+DEBUG flwr 2024-03-30 06:34:15,278 | server.py:236 | fit_round 1 received 16 results and 0 failures
+WARNING flwr 2024-03-30 06:34:15,661 | fedavg.py:250 | No fit_metrics_aggregation_fn provided
+DEBUG flwr 2024-03-30 06:34:15,662 | server.py:173 | evaluate_round 1: strategy sampled 16 clients (out of 16)
+DEBUG flwr 2024-03-30 06:34:17,389 | server.py:187 | evaluate_round 1 received 0 results and 16 failures
+INFO flwr 2024-03-30 06:34:17,389 | server.py:153 | FL finished in 9.583660004660487
+INFO flwr 2024-03-30 06:34:17,393 | app.py:226 | app_fit: losses_distributed []
+INFO flwr 2024-03-30 06:34:17,394 | app.py:227 | app_fit: metrics_distributed_fit {}
+INFO flwr 2024-03-30 06:34:17,394 | app.py:228 | app_fit: metrics_distributed {}
+INFO flwr 2024-03-30 06:34:17,394 | app.py:229 | app_fit: losses_centralized []
+INFO flwr 2024-03-30 06:34:17,394 | app.py:230 | app_fit: metrics_centralized {}
+0: DEBUG flwr 2024-03-30 06:34:17,405 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:17,405 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:17,405 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:17,405 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:17,405 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:34:17,405 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:17,406 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:34:17,406 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:17,406 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:34:17,406 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:17,406 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:34:17,406 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:17,406 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:17,406 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:17,407 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:17,407 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:17,408 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:34:17,408 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:17,408 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:34:17,408 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:17,408 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:17,408 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:17,409 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:17,409 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:17,409 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:17,410 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:17,410 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:17,410 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:17,411 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:17,411 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:17,723 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:17,723 | app.py:398 | Disconnect and shut down
+srun: warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+0: Starting client 1
+0: Starting client 2
+0: Starting client 3
+0: Starting client 4
+0: Starting client 5
+0: Starting client 6
+0: Starting client 7
+0: Starting client 8
+0: Starting client 9
+0: Starting client 10
+0: Starting client 11
+0: Starting client 12
+0: Starting client 13
+0: Starting client 14
+0: Starting client 15
+0: Starting client 16
+0: Starting client 17
+0: Starting client 18
+0: Starting client 19
+0: Starting client 20
+0: Starting client 21
+0: Starting client 22
+0: Starting client 23
+0: Starting client 24
+0: Starting client 25
+0: Starting client 26
+0: Starting client 27
+0: Starting client 28
+0: Starting client 29
+0: Starting client 30
+0: Starting client 31
+0: Starting client 32
+INFO flwr 2024-03-30 06:34:18,875 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=1, round_timeout=None)
+INFO flwr 2024-03-30 06:34:18,881 | app.py:176 | Flower ECE: gRPC server running (1 rounds), SSL is disabled
+INFO flwr 2024-03-30 06:34:18,884 | server.py:89 | Initializing global parameters
+INFO flwr 2024-03-30 06:34:18,884 | server.py:276 | Requesting initial parameters from one random client
+0: INFO flwr 2024-03-30 06:34:23,822 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:23,823 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:23,823 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:23,824 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:23,830 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:23,831 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:23,832 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:23,833 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:23,838 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:23,839 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:23,840 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:23,840 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:23,844 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: INFO flwr 2024-03-30 06:34:23,845 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:23,845 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:23,845 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:23,846 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:23,846 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:23,846 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:23,847 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:23,854 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:23,855 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:23,856 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:23,856 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:23,871 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:23,872 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:23,873 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:23,874 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:23,901 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:23,902 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:23,903 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:23,904 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:23,904 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: INFO flwr 2024-03-30 06:34:23,905 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:23,905 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:23,906 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:23,906 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:23,906 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:23,906 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:23,907 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:23,912 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:23,913 | connection.py:55 | ChannelConnectivity.IDLE
+0: INFO flwr 2024-03-30 06:34:23,913 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: INFO flwr 2024-03-30 06:34:23,913 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:23,913 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:23,914 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:23,914 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:23,914 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:23,914 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:23,914 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:23,915 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: INFO flwr 2024-03-30 06:34:23,916 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:23,917 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:23,917 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:23,918 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:23,919 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:23,925 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:23,927 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:23,927 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:23,929 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:23,930 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:23,930 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:23,931 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:24,017 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:24,017 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:24,018 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:24,038 | connection.py:55 | ChannelConnectivity.READY
+INFO flwr 2024-03-30 06:34:24,050 | server.py:280 | Received initial parameters from one random client
+INFO flwr 2024-03-30 06:34:24,050 | server.py:91 | Evaluating initial parameters
+INFO flwr 2024-03-30 06:34:24,050 | server.py:104 | FL starting
+0: INFO flwr 2024-03-30 06:34:24,055 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:24,056 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:24,057 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:24,058 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:24,062 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:24,063 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:24,063 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:24,064 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:24,065 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:24,066 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:24,066 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:24,071 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:24,071 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:24,072 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: INFO flwr 2024-03-30 06:34:24,076 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:24,077 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:24,077 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:24,077 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:24,078 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: INFO flwr 2024-03-30 06:34:24,078 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:24,078 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:24,078 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:24,079 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: INFO flwr 2024-03-30 06:34:24,079 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:24,079 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:24,079 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:24,079 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:24,079 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:24,080 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:24,080 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:24,087 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:24,088 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:24,089 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:24,091 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:24,092 | connection.py:55 | ChannelConnectivity.IDLE
+0: INFO flwr 2024-03-30 06:34:24,092 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:24,093 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:24,093 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:24,093 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:24,094 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:24,094 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:24,095 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:24,096 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:24,096 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:24,097 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:24,127 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:24,128 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:24,129 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:24,137 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:24,138 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:24,138 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:24,139 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:24,139 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:24,140 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:24,141 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:24,141 | connection.py:55 | ChannelConnectivity.READY
+DEBUG flwr 2024-03-30 06:34:24,143 | server.py:222 | fit_round 1: strategy sampled 32 clients (out of 32)
+DEBUG flwr 2024-03-30 06:34:38,714 | server.py:236 | fit_round 1 received 32 results and 0 failures
+WARNING flwr 2024-03-30 06:34:39,467 | fedavg.py:250 | No fit_metrics_aggregation_fn provided
+DEBUG flwr 2024-03-30 06:34:39,469 | server.py:173 | evaluate_round 1: strategy sampled 32 clients (out of 32)
+DEBUG flwr 2024-03-30 06:34:42,870 | server.py:187 | evaluate_round 1 received 0 results and 32 failures
+INFO flwr 2024-03-30 06:34:42,870 | server.py:153 | FL finished in 18.819812882691622
+INFO flwr 2024-03-30 06:34:42,883 | app.py:226 | app_fit: losses_distributed []
+INFO flwr 2024-03-30 06:34:42,883 | app.py:227 | app_fit: metrics_distributed_fit {}
+INFO flwr 2024-03-30 06:34:42,884 | app.py:228 | app_fit: metrics_distributed {}
+INFO flwr 2024-03-30 06:34:42,884 | app.py:229 | app_fit: losses_centralized []
+INFO flwr 2024-03-30 06:34:42,884 | app.py:230 | app_fit: metrics_centralized {}
+0: DEBUG flwr 2024-03-30 06:34:42,900 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:42,901 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:42,901 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:42,901 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:42,903 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:42,903 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:42,904 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:42,904 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:42,908 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:34:42,908 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:42,908 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:34:42,908 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:42,908 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:42,908 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:42,909 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:42,909 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:42,909 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:34:42,908 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:42,909 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:34:42,909 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:42,909 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:42,909 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:42,909 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:42,909 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:42,909 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:34:42,910 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:42,910 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:34:42,910 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:42,910 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:42,910 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:42,910 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:42,911 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:42,911 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:34:42,911 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:42,911 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:34:42,912 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:42,911 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:42,912 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:42,912 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:34:42,912 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:42,912 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:34:42,912 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:42,913 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:34:42,913 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:42,913 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:34:42,913 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:42,915 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:42,916 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:42,918 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:42,918 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:42,919 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:42,920 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:42,922 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:42,922 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:42,922 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:34:42,922 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:42,922 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:34:42,922 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:42,922 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:34:42,922 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:42,922 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:34:42,922 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:34:42,924 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:34:42,924 | app.py:398 | Disconnect and shut down
+srun: warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+0: Starting client 1
+0: Starting client 2
+0: Starting client 3
+0: Starting client 4
+0: Starting client 5
+0: Starting client 6
+0: Starting client 7
+0: Starting client 8
+0: Starting client 9
+0: Starting client 10
+0: Starting client 11
+0: Starting client 12
+0: Starting client 13
+0: Starting client 14
+0: Starting client 15
+0: Starting client 16
+0: Starting client 17
+0: Starting client 18
+0: Starting client 19
+0: Starting client 20
+0: Starting client 21
+0: Starting client 22
+0: Starting client 23
+0: Starting client 24
+0: Starting client 25
+0: Starting client 26
+0: Starting client 27
+0: Starting client 28
+0: Starting client 29
+0: Starting client 30
+0: Starting client 31
+0: Starting client 32
+0: Starting client 33
+0: Starting client 34
+0: Starting client 35
+0: Starting client 36
+0: Starting client 37
+0: Starting client 38
+0: Starting client 39
+0: Starting client 40
+0: Starting client 41
+0: Starting client 42
+0: Starting client 43
+0: Starting client 44
+0: Starting client 45
+0: Starting client 46
+0: Starting client 47
+0: Starting client 48
+0: Starting client 49
+0: Starting client 50
+0: Starting client 51
+0: Starting client 52
+0: Starting client 53
+0: Starting client 54
+0: Starting client 55
+0: Starting client 56
+0: Starting client 57
+0: Starting client 58
+0: Starting client 59
+0: Starting client 60
+0: Starting client 61
+0: Starting client 62
+0: Starting client 63
+0: Starting client 64
+INFO flwr 2024-03-30 06:34:44,341 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=1, round_timeout=None)
+INFO flwr 2024-03-30 06:34:44,347 | app.py:176 | Flower ECE: gRPC server running (1 rounds), SSL is disabled
+INFO flwr 2024-03-30 06:34:44,347 | server.py:89 | Initializing global parameters
+INFO flwr 2024-03-30 06:34:44,347 | server.py:276 | Requesting initial parameters from one random client
+0: INFO flwr 2024-03-30 06:34:54,500 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,501 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,502 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,503 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:54,513 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,515 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,515 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:54,531 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,532 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,533 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,533 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:54,536 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,537 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,538 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,538 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:54,556 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,557 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,558 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,558 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:54,560 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,561 | connection.py:55 | ChannelConnectivity.IDLE
+0: INFO flwr 2024-03-30 06:34:54,562 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: INFO flwr 2024-03-30 06:34:54,562 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,562 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,562 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,563 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:54,564 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:54,564 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,565 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:54,567 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: INFO flwr 2024-03-30 06:34:54,567 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: INFO flwr 2024-03-30 06:34:54,567 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,567 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,568 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,568 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,569 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:54,569 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,569 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,569 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:54,569 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:54,570 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,570 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,571 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,571 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,572 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:54,572 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,572 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:54,572 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,573 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,574 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:54,575 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: INFO flwr 2024-03-30 06:34:54,576 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,576 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,577 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,577 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,577 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:54,577 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,578 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:54,579 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,580 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,581 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,582 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:54,582 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: INFO flwr 2024-03-30 06:34:54,582 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: INFO flwr 2024-03-30 06:34:54,582 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,582 | connection.py:55 | ChannelConnectivity.IDLE
+0: INFO flwr 2024-03-30 06:34:54,582 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,583 | connection.py:55 | ChannelConnectivity.IDLE
+0: INFO flwr 2024-03-30 06:34:54,583 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,582 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,583 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,583 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:54,583 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,584 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:54,584 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,584 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,584 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,584 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:54,584 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:54,585 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,585 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:54,587 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,588 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,588 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,589 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:54,592 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,592 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,593 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,594 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:54,596 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: INFO flwr 2024-03-30 06:34:54,597 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: INFO flwr 2024-03-30 06:34:54,597 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: INFO flwr 2024-03-30 06:34:54,597 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,598 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,598 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,598 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,598 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,598 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,598 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,599 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,599 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: INFO flwr 2024-03-30 06:34:54,599 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,599 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:54,600 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:54,599 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,600 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,601 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:54,600 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,601 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,601 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:54,602 | connection.py:55 | ChannelConnectivity.IDLE
+0: INFO flwr 2024-03-30 06:34:54,602 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,602 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,602 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,603 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,603 | connection.py:55 | ChannelConnectivity.IDLE
+0: INFO flwr 2024-03-30 06:34:54,602 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,603 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:54,603 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: INFO flwr 2024-03-30 06:34:54,603 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,603 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:54,603 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:54,603 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:54,604 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,604 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,604 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: INFO flwr 2024-03-30 06:34:54,605 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,604 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,605 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:54,605 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:54,605 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,606 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,606 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:54,607 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,608 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,608 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: INFO flwr 2024-03-30 06:34:54,608 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,609 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:54,610 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,611 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: INFO flwr 2024-03-30 06:34:54,611 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,612 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:54,612 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,612 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,613 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:54,613 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: INFO flwr 2024-03-30 06:34:54,613 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,613 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,614 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,614 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,614 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:54,615 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:54,619 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,620 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,621 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,621 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:54,622 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,623 | connection.py:55 | ChannelConnectivity.IDLE
+0: INFO flwr 2024-03-30 06:34:54,622 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,623 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,624 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,624 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:54,624 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,624 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:54,628 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,629 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,629 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,630 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:54,638 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: INFO flwr 2024-03-30 06:34:54,639 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,639 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,640 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,640 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,640 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:54,640 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,641 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:54,644 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,645 | connection.py:55 | ChannelConnectivity.IDLE
+0: INFO flwr 2024-03-30 06:34:54,645 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: INFO flwr 2024-03-30 06:34:54,646 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,646 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: INFO flwr 2024-03-30 06:34:54,646 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: INFO flwr 2024-03-30 06:34:54,646 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,646 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,646 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,646 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:54,646 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,647 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,647 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:54,647 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,647 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,647 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,647 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:54,647 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:54,648 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:54,654 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,655 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,655 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: INFO flwr 2024-03-30 06:34:54,655 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,655 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:54,656 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,656 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,657 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:54,662 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,663 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,664 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,664 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:54,680 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,680 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,681 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,682 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:54,684 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,685 | connection.py:55 | ChannelConnectivity.IDLE
+0: INFO flwr 2024-03-30 06:34:54,686 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,687 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,687 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,687 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:54,687 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,688 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:54,697 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,698 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,699 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,735 | connection.py:55 | ChannelConnectivity.READY
+INFO flwr 2024-03-30 06:34:54,741 | server.py:280 | Received initial parameters from one random client
+INFO flwr 2024-03-30 06:34:54,741 | server.py:91 | Evaluating initial parameters
+INFO flwr 2024-03-30 06:34:54,741 | server.py:104 | FL starting
+0: INFO flwr 2024-03-30 06:34:54,742 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,743 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,744 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,744 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:54,793 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: INFO flwr 2024-03-30 06:34:54,793 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,794 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,794 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,795 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,795 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,795 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:34:54,797 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:54,797 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,798 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,798 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:34:54,799 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:54,833 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,834 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:34:54,835 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:34:54,840 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:34:54,841 | connection.py:55 | ChannelConnectivity.IDLE
+DEBUG flwr 2024-03-30 06:34:54,841 | server.py:222 | fit_round 1: strategy sampled 64 clients (out of 64)
+0: DEBUG flwr 2024-03-30 06:34:54,842 | connection.py:55 | ChannelConnectivity.READY
+DEBUG flwr 2024-03-30 06:35:22,811 | server.py:236 | fit_round 1 received 64 results and 0 failures
+WARNING flwr 2024-03-30 06:35:24,313 | fedavg.py:250 | No fit_metrics_aggregation_fn provided
+DEBUG flwr 2024-03-30 06:35:24,314 | server.py:173 | evaluate_round 1: strategy sampled 64 clients (out of 64)
+DEBUG flwr 2024-03-30 06:35:30,992 | server.py:187 | evaluate_round 1 received 0 results and 64 failures
+INFO flwr 2024-03-30 06:35:30,993 | server.py:153 | FL finished in 36.2513593044132
+INFO flwr 2024-03-30 06:35:31,003 | app.py:226 | app_fit: losses_distributed []
+INFO flwr 2024-03-30 06:35:31,003 | app.py:227 | app_fit: metrics_distributed_fit {}
+INFO flwr 2024-03-30 06:35:31,003 | app.py:228 | app_fit: metrics_distributed {}
+INFO flwr 2024-03-30 06:35:31,003 | app.py:229 | app_fit: losses_centralized []
+INFO flwr 2024-03-30 06:35:31,003 | app.py:230 | app_fit: metrics_centralized {}
+0: DEBUG flwr 2024-03-30 06:35:31,010 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,010 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,016 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,016 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,022 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,022 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,024 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,025 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,028 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,028 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,029 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,029 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,029 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,030 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,043 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,043 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,046 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,046 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,053 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,053 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,053 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,053 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,053 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:35:31,053 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:35:31,053 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:35:31,053 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,053 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:35:31,053 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:35:31,053 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:35:31,053 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,053 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,054 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,053 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:35:31,054 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:35:31,053 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:35:31,054 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,054 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,054 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,054 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:35:31,054 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:35:31,054 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,054 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:35:31,054 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,054 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:35:31,054 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:35:31,054 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,054 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,054 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,054 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:35:31,054 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:35:31,055 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,055 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:35:31,055 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:35:31,055 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,054 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:35:31,055 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,055 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:35:31,055 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,056 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:35:31,056 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,056 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:35:31,056 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,055 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:35:31,056 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,056 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:35:31,056 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,056 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,057 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,057 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:35:31,057 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,057 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:35:31,057 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,057 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,057 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,058 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,058 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,058 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,058 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,059 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:35:31,059 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,059 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:35:31,059 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,059 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,059 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,060 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:35:31,060 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,060 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:35:31,060 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,061 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,061 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,061 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,061 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,061 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,062 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,061 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,062 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,062 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,063 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,066 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,066 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,067 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,067 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,068 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,068 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,068 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,068 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,069 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,069 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,070 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:35:31,070 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,070 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:35:31,070 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,071 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,071 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,071 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,071 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,074 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,074 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,083 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,084 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,438 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,438 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:31,473 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:31,474 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:33,049 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:33,050 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:35:34,052 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:35:34,053 | app.py:398 | Disconnect and shut down
+srun: warning: can't run 1 processes on 2 nodes, setting nnodes to 1
+0: Starting client 1
+0: Starting client 2
+0: Starting client 3
+0: Starting client 4
+0: Starting client 5
+0: Starting client 6
+0: Starting client 7
+0: Starting client 8
+0: Starting client 9
+0: Starting client 10
+0: Starting client 11
+0: Starting client 12
+0: Starting client 13
+0: Starting client 14
+0: Starting client 15
+0: Starting client 16
+0: Starting client 17
+0: Starting client 18
+0: Starting client 19
+0: Starting client 20
+0: Starting client 21
+0: Starting client 22
+0: Starting client 23
+0: Starting client 24
+0: Starting client 25
+0: Starting client 26
+0: Starting client 27
+0: Starting client 28
+0: Starting client 29
+0: Starting client 30
+0: Starting client 31
+0: Starting client 32
+0: Starting client 33
+0: Starting client 34
+0: Starting client 35
+0: Starting client 36
+0: Starting client 37
+0: Starting client 38
+0: Starting client 39
+0: Starting client 40
+0: Starting client 41
+0: Starting client 42
+0: Starting client 43
+0: Starting client 44
+0: Starting client 45
+0: Starting client 46
+0: Starting client 47
+0: Starting client 48
+0: Starting client 49
+0: Starting client 50
+0: Starting client 51
+0: Starting client 52
+0: Starting client 53
+0: Starting client 54
+0: Starting client 55
+0: Starting client 56
+0: Starting client 57
+0: Starting client 58
+0: Starting client 59
+0: Starting client 60
+0: Starting client 61
+0: Starting client 62
+0: Starting client 63
+0: Starting client 64
+0: Starting client 65
+0: Starting client 66
+0: Starting client 67
+0: Starting client 68
+0: Starting client 69
+0: Starting client 70
+0: Starting client 71
+0: Starting client 72
+0: Starting client 73
+0: Starting client 74
+0: Starting client 75
+0: Starting client 76
+0: Starting client 77
+0: Starting client 78
+0: Starting client 79
+0: Starting client 80
+0: Starting client 81
+0: Starting client 82
+0: Starting client 83
+0: Starting client 84
+0: Starting client 85
+0: Starting client 86
+0: Starting client 87
+0: Starting client 88
+0: Starting client 89
+0: Starting client 90
+0: Starting client 91
+0: Starting client 92
+0: Starting client 93
+0: Starting client 94
+0: Starting client 95
+0: Starting client 96
+0: Starting client 97
+0: Starting client 98
+0: Starting client 99
+0: Starting client 100
+0: Starting client 101
+0: Starting client 102
+0: Starting client 103
+0: Starting client 104
+0: Starting client 105
+0: Starting client 106
+0: Starting client 107
+0: Starting client 108
+0: Starting client 109
+0: Starting client 110
+0: Starting client 111
+0: Starting client 112
+0: Starting client 113
+0: Starting client 114
+0: Starting client 115
+0: Starting client 116
+0: Starting client 117
+0: Starting client 118
+0: Starting client 119
+0: Starting client 120
+0: Starting client 121
+0: Starting client 122
+0: Starting client 123
+0: Starting client 124
+0: Starting client 125
+0: Starting client 126
+0: Starting client 127
+0: Starting client 128
+INFO flwr 2024-03-30 06:35:35,327 | app.py:163 | Starting Flower server, config: ServerConfig(num_rounds=1, round_timeout=None)
+INFO flwr 2024-03-30 06:35:35,333 | app.py:176 | Flower ECE: gRPC server running (1 rounds), SSL is disabled
+INFO flwr 2024-03-30 06:35:35,333 | server.py:89 | Initializing global parameters
+INFO flwr 2024-03-30 06:35:35,333 | server.py:276 | Requesting initial parameters from one random client
+0: INFO flwr 2024-03-30 06:35:49,678 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:49,681 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:49,681 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:49,682 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:49,736 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:49,739 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:49,739 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:49,740 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:49,747 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:49,750 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:49,751 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:49,751 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:49,799 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:49,803 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:49,804 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:49,807 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:49,808 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:49,809 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:49,810 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:49,850 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:49,853 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:49,854 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:49,859 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:49,872 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:49,873 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:49,875 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: INFO flwr 2024-03-30 06:35:49,880 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:49,881 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:49,882 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: INFO flwr 2024-03-30 06:35:49,891 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:49,892 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:49,893 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:49,903 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:35:49,903 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:35:49,903 | connection.py:55 | ChannelConnectivity.READY
+INFO flwr 2024-03-30 06:35:49,912 | server.py:280 | Received initial parameters from one random client
+INFO flwr 2024-03-30 06:35:49,913 | server.py:91 | Evaluating initial parameters
+INFO flwr 2024-03-30 06:35:49,913 | server.py:104 | FL starting
+0: INFO flwr 2024-03-30 06:35:49,918 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:49,920 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:49,920 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:49,943 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:49,945 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:49,945 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: INFO flwr 2024-03-30 06:35:49,947 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:49,945 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:35:49,948 | connection.py:55 | ChannelConnectivity.IDLE
+0: INFO flwr 2024-03-30 06:35:49,950 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:49,952 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:49,951 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:49,953 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:49,953 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:49,953 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:49,954 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:35:49,955 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:49,956 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:49,959 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:49,973 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:49,974 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:49,975 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:49,975 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:49,997 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:50,001 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:50,001 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:50,017 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:50,018 | connection.py:55 | ChannelConnectivity.IDLE
+0: INFO flwr 2024-03-30 06:35:50,021 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:50,021 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:50,023 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:50,024 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:50,024 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:50,025 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:35:50,025 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:50,027 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:50,027 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:50,028 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:50,029 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:50,030 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:50,033 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:50,033 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:50,034 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:50,040 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:50,068 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:50,069 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:50,069 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:50,070 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:50,096 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:50,097 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:50,098 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:50,098 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:50,104 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:50,105 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:50,106 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:50,107 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:50,110 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:50,111 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:50,111 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:50,112 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:50,115 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:50,116 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:50,116 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:50,117 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:50,137 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:50,138 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:50,139 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:50,139 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:50,141 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:50,142 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:50,143 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:50,145 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:50,146 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:50,147 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:50,154 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:50,155 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:50,156 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:50,156 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:50,184 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:50,184 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:50,185 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:50,186 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:50,189 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:50,189 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:50,190 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:50,191 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:50,220 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:50,220 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:50,221 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:50,221 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:50,224 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:50,225 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:50,225 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:50,226 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:50,236 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:50,237 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:50,238 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:50,238 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:50,697 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:50,698 | connection.py:55 | ChannelConnectivity.IDLE
+0: INFO flwr 2024-03-30 06:35:50,698 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:50,699 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:50,699 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:35:50,699 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:50,700 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:50,700 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:50,710 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:50,711 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:50,713 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:50,714 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:50,754 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:50,755 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:50,756 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:50,756 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:50,801 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:50,802 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:50,803 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:50,803 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:50,832 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:50,834 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:50,834 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:50,836 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:50,942 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:50,943 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:50,944 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:50,944 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:50,944 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:50,945 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:50,946 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,019 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,020 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,020 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,021 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,059 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,060 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,060 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,060 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,095 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,096 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,096 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,097 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,112 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: INFO flwr 2024-03-30 06:35:51,113 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,114 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,114 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,114 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,115 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:35:51,116 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,288 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,289 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,289 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,290 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,342 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,343 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,344 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,353 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,354 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,355 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,367 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,369 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,369 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,369 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,416 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,416 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,417 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,417 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,449 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,450 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,451 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,451 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,461 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,462 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,463 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,463 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,469 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,470 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,471 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,471 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,490 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,491 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,492 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,492 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,527 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,528 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,528 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,539 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,546 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,548 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,548 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,561 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,562 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,562 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,563 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,620 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,621 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,622 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,625 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,626 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,627 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,628 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,681 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,682 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,683 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,683 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,716 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,717 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,718 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: INFO flwr 2024-03-30 06:35:51,719 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,720 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:35:51,721 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,722 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: INFO flwr 2024-03-30 06:35:51,723 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,723 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:35:51,724 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,724 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,724 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,733 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,735 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,736 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,736 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,747 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,748 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,749 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,754 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,755 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,756 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,787 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,789 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,790 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,791 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,793 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,794 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,794 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,795 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,827 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,828 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,829 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,840 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,842 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,843 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,843 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,875 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,877 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,878 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,878 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,886 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: INFO flwr 2024-03-30 06:35:51,887 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,887 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,888 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,888 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,888 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:35:51,889 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,889 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,909 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,910 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,911 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,911 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,913 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,915 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,915 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,915 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,920 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,921 | connection.py:55 | ChannelConnectivity.IDLE
+0: INFO flwr 2024-03-30 06:35:51,921 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,922 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,922 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:35:51,923 | connection.py:55 | ChannelConnectivity.IDLE
+0: INFO flwr 2024-03-30 06:35:51,927 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,928 | connection.py:55 | ChannelConnectivity.IDLE
+0: INFO flwr 2024-03-30 06:35:51,928 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: INFO flwr 2024-03-30 06:35:51,929 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,929 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,929 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,930 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,930 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:35:51,930 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,930 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:35:51,931 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,931 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,931 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:35:51,931 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,935 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,935 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,936 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,937 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,949 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: INFO flwr 2024-03-30 06:35:51,949 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,949 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,950 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,950 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,950 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,950 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,951 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:35:51,952 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,952 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,953 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,953 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,954 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,955 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,955 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,958 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,959 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,960 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,961 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,962 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,962 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,963 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,963 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,966 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,967 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,967 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,971 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,975 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,976 | connection.py:55 | ChannelConnectivity.IDLE
+0: INFO flwr 2024-03-30 06:35:51,976 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,977 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: INFO flwr 2024-03-30 06:35:51,977 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,977 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,977 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,978 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,978 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,978 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,978 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,978 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,978 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,979 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,979 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,979 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,979 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: INFO flwr 2024-03-30 06:35:51,980 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: INFO flwr 2024-03-30 06:35:51,980 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,981 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,981 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,981 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: INFO flwr 2024-03-30 06:35:51,982 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,982 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,983 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,983 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: INFO flwr 2024-03-30 06:35:51,984 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: INFO flwr 2024-03-30 06:35:51,986 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: INFO flwr 2024-03-30 06:35:51,987 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,987 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,987 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,987 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,988 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,988 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:35:51,988 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:35:51,988 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:35:51,988 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:35:51,988 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:35:51,988 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:35:51,988 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:35:51,988 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:35:51,990 | connection.py:55 | ChannelConnectivity.IDLE
+0: INFO flwr 2024-03-30 06:35:51,992 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,993 | connection.py:55 | ChannelConnectivity.IDLE
+0: INFO flwr 2024-03-30 06:35:51,993 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,993 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,994 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:35:51,994 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,994 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,995 | connection.py:55 | ChannelConnectivity.IDLE
+0: INFO flwr 2024-03-30 06:35:51,995 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,995 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,996 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:35:51,996 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,996 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,996 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,997 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:35:51,997 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:51,997 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: INFO flwr 2024-03-30 06:35:51,997 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: INFO flwr 2024-03-30 06:35:51,997 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,998 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,998 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:51,999 | connection.py:55 | ChannelConnectivity.IDLE
+0: INFO flwr 2024-03-30 06:35:51,999 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:51,999 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,999 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,999 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:51,999 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:35:51,999 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:52,000 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:35:52,000 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:35:52,000 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: INFO flwr 2024-03-30 06:35:52,000 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:52,000 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:52,002 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:52,002 | connection.py:55 | ChannelConnectivity.IDLE
+0: INFO flwr 2024-03-30 06:35:52,002 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:52,002 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:52,003 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:52,003 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:52,003 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:52,003 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:35:52,003 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:35:52,004 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:52,004 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:52,007 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:52,010 | connection.py:55 | ChannelConnectivity.IDLE
+0: INFO flwr 2024-03-30 06:35:52,010 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:52,010 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:52,011 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:35:52,011 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:52,011 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: INFO flwr 2024-03-30 06:35:52,011 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: INFO flwr 2024-03-30 06:35:52,011 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:52,012 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:35:52,012 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:52,012 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:52,012 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:52,013 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:52,013 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:35:52,014 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:52,014 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:52,015 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:52,015 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:52,015 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:52,017 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:52,018 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:52,019 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:52,019 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:52,019 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:52,020 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:52,020 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:52,021 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:52,026 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:52,027 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:52,027 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:52,028 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:52,034 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:52,035 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:52,036 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: INFO flwr 2024-03-30 06:35:52,042 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:52,044 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:52,045 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:52,058 | connection.py:55 | ChannelConnectivity.READY
+0: DEBUG flwr 2024-03-30 06:35:52,058 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:52,063 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:52,064 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:52,064 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:52,065 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:52,065 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:52,066 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:52,066 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:52,079 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:52,080 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:52,081 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:52,081 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:52,092 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:52,092 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:52,093 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:52,094 | connection.py:55 | ChannelConnectivity.READY
+0: INFO flwr 2024-03-30 06:35:52,107 | grpc.py:52 | Opened insecure gRPC connection (no certificates were passed)
+0: DEBUG flwr 2024-03-30 06:35:52,108 | connection.py:55 | ChannelConnectivity.IDLE
+0: DEBUG flwr 2024-03-30 06:35:52,109 | connection.py:55 | ChannelConnectivity.CONNECTING
+0: DEBUG flwr 2024-03-30 06:35:52,109 | connection.py:55 | ChannelConnectivity.READY
+DEBUG flwr 2024-03-30 06:35:52,109 | server.py:222 | fit_round 1: strategy sampled 128 clients (out of 128)
+DEBUG flwr 2024-03-30 06:36:47,202 | server.py:236 | fit_round 1 received 128 results and 0 failures
+WARNING flwr 2024-03-30 06:36:50,166 | fedavg.py:250 | No fit_metrics_aggregation_fn provided
+DEBUG flwr 2024-03-30 06:36:50,168 | server.py:173 | evaluate_round 1: strategy sampled 128 clients (out of 128)
+DEBUG flwr 2024-03-30 06:37:03,361 | server.py:187 | evaluate_round 1 received 0 results and 128 failures
+INFO flwr 2024-03-30 06:37:03,361 | server.py:153 | FL finished in 73.4483725707978
+INFO flwr 2024-03-30 06:37:03,363 | app.py:226 | app_fit: losses_distributed []
+INFO flwr 2024-03-30 06:37:03,364 | app.py:227 | app_fit: metrics_distributed_fit {}
+INFO flwr 2024-03-30 06:37:03,364 | app.py:228 | app_fit: metrics_distributed {}
+INFO flwr 2024-03-30 06:37:03,364 | app.py:229 | app_fit: losses_centralized []
+INFO flwr 2024-03-30 06:37:03,364 | app.py:230 | app_fit: metrics_centralized {}
+0: DEBUG flwr 2024-03-30 06:37:03,382 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,382 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,386 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,386 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,388 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,388 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,389 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,389 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,394 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,394 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,403 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,403 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,404 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,404 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,406 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,406 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,407 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:37:03,407 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,407 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:37:03,407 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,408 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,408 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,411 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,411 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,411 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,411 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,412 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,412 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,412 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,412 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,416 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,416 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,418 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,418 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,419 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,419 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,421 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,421 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,422 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,422 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,423 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,423 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,425 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:37:03,425 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:37:03,425 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,426 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:37:03,426 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:37:03,426 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,426 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:37:03,426 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,426 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:37:03,426 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,426 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,427 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,427 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,427 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,428 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,428 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,429 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,429 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,429 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:37:03,430 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,431 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:37:03,431 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,431 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,431 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,432 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,432 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,432 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,433 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,433 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,433 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,433 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,433 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,433 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,433 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,433 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,434 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,434 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,434 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,434 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,434 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,435 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,435 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,434 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,435 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,435 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,436 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,436 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,436 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,436 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,436 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,437 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:37:03,437 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,437 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:37:03,437 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,437 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,438 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,438 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,438 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,438 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,438 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,439 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,439 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,440 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,441 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,440 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,441 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,441 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:37:03,441 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,441 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:37:03,441 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,441 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,441 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,442 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,442 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,442 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,442 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,443 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:37:03,443 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,443 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:37:03,443 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,443 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:37:03,443 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,444 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:37:03,444 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,444 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:37:03,444 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,444 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:37:03,444 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,445 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:37:03,445 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,445 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:37:03,445 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,445 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,446 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,446 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:37:03,446 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,446 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:37:03,446 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,446 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:37:03,446 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,446 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:37:03,446 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,447 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,447 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,447 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:37:03,447 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,447 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:37:03,447 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,448 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,449 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,449 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,449 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,453 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,453 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,454 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:37:03,454 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,455 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:37:03,455 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,455 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,455 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,458 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,458 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,464 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,465 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,465 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,465 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,467 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,468 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,472 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,472 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,474 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,474 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,475 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,475 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,476 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,476 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,477 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,477 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,478 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,478 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,479 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,479 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,479 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,479 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,479 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,479 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,479 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:37:03,479 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,480 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,480 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:37:03,480 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,480 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:37:03,480 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:37:03,480 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,482 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:37:03,482 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,483 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:37:03,483 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,483 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,483 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,483 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,484 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,486 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,486 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,486 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,487 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,487 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,487 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,487 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,487 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,487 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,487 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,488 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,488 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,489 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,489 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,490 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,490 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,490 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,490 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,490 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,490 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,491 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,491 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,491 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,491 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,491 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,492 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,493 | connection.py:220 | gRPC channel closed
+0: DEBUG flwr 2024-03-30 06:37:03,493 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,493 | app.py:398 | Disconnect and shut down
+0: INFO flwr 2024-03-30 06:37:03,493 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,493 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,493 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,494 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,494 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,494 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,495 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,500 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,500 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:03,979 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:03,980 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:04,000 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:04,000 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:04,122 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:04,123 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:04,172 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:04,173 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:06,419 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:06,420 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:06,447 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:06,447 | app.py:398 | Disconnect and shut down
+0: DEBUG flwr 2024-03-30 06:37:06,477 | connection.py:220 | gRPC channel closed
+0: INFO flwr 2024-03-30 06:37:06,478 | app.py:398 | Disconnect and shut down
