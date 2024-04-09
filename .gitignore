@@ -1,3 +1,6 @@
+# Jetbrains-related ignores
+.idea/
+
 # macOS ignore(s)
 .DS_Store
 
