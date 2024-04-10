@@ -56,5 +56,5 @@ fl.server.start_server(
 
 
 end = time()*1_000_000_000 #this to get it into nanoseconds
-with open(f'flower_time_{args.clients}_{args.model}.txt','w') as f:
+with open(f'flower_time_{args.model}_{args.clients}.txt','w') as f:
     f.write("{:0.8f}".format(end))

@@ -2,7 +2,7 @@
 #set -e
 #cd "$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"/
 
-date +%s%N >> flower_time_$1_$2_$hostname.txt
+date +%s%N >> flower_time_$2_$1_$(hostname).txt
 #echo "Starting server"
 #python server.py --clients $1 &
 #sleep 3  # Sleep for 3s to give the server enough time to start
