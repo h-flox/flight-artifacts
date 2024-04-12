@@ -1,3 +1,4 @@
+
 import argparse
 import time
 import torch
@@ -28,7 +29,7 @@ from flox_classes import Net, KyleNet
 
 
 def main(args: argparse.Namespace):
-
+    
     flock = create_standard_flock(num_workers=args.max_workers)
     root_dir = Path(args.root_dir)
     if "~" in str(root_dir):
@@ -56,7 +57,7 @@ def main(args: argparse.Namespace):
         "label": "local-htex",
         "max_workers_per_node": args.max_workers,
         "provider": LocalProvider(
-            worker_init="source ~/setup_parsl_test_env.sh; export PYTHONPATH=/home/yadunand/flox-scaling-tests/parsl-tests:$PYTHONPATH"
+            worker_init="source ~/setup_parsl_test_env.v2.sh; export PYTHONPATH=/home/yadunand/flox-scaling-tests/parsl-tests:$PYTHONPATH"
         ),
     }
     parsl_remote = {
@@ -100,7 +101,6 @@ def main(args: argparse.Namespace):
         debug_mode=True,
         launcher_kind=args.executor,
         launcher_cfg=parsl_config,
-        redis_ip_address=address_by_interface("ib0"),
     )
 
 
@@ -119,13 +119,9 @@ if __name__ == "__main__":
         choices=["singlenode", "multinode"],
         default="singlenode",
     )
-    args.add_argument(
-        "--max_workers",
-        "-w",
-        type=int,
-        help="This is the # of parsl workers and flox worker_nodes we get",
-        default=1,
-    )
+    args.add_argument("--max_workers", "-w", type=int,
+                      help="This is the # of parsl workers and flox worker_nodes we get",
+                      default=1)
     args.add_argument("--samples_alpha", "-s", type=float, default=1000.0)
     args.add_argument("--labels_alpha", "-l", type=float, default=1000.0)
     args.add_argument("--rounds", "-r", type=int, default=1)
