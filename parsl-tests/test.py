@@ -90,6 +90,19 @@ def main(args: argparse.Namespace):
     elif args.model == 152:
         flox_model = resnet152(weights=None)
 
+
+    m = None
+    if args.model == 0:
+        m=None
+    elif args.model == 1:
+        m = KyleNet()
+    elif args.model == 18:
+         m=resnet18(weights=None)
+    elif args.model == 50:
+         m=resnet50(weights=None)
+    elif args.model == 152:
+         m=resnet152(weights=None)
+
     flox.federated_fit(
         flock=flock,
         module=flox_model,

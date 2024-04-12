@@ -69,26 +69,7 @@ def test(net, testloader):
     return loss, accuracy
 
 
-def load_data(partition_id):
-    """Load partition CIFAR10 data."""
-    #fds = FederatedDataset(dataset="cifar10", partitioners={"train": 3})
-    #partition = fds.load_partition(partition_id)
-    # Divide data on each node: 80% train, 20% test
-    #partition_train_test = partition.train_test_split(test_size=0.2)
-    #pytorch_transforms = Compose(
-    #    [ToTensor(), Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))]
-    #)
 
-    #def apply_transforms(batch):
-    #    """Apply transforms to the partition from FederatedDataset."""
-    #    batch["img"] = [pytorch_transforms(img) for img in batch["img"]]
-    #    return batch
-
-    #partition_train_test = partition_train_test.with_transform(apply_transforms)
-    #trainloader = DataLoader(partition_train_test["train"], batch_size=32, shuffle=True)
-    #testloader = DataLoader(partition_train_test["test"], batch_size=32)
-    #return trainloader, testloader
-    return DataLoader([0]), DataLoader([0])
 
 
 # #############################################################################
@@ -106,10 +87,10 @@ parser.add_argument(
 )
 parser.add_argument(
     "--model",
-    choices=[0, 1, 18, 50, 152],
+    choices=[0, 18, 50, 152],
     required=True,
     type=int,
-    help="Model: 0 - 1 layer, 1 KyleNet, Resnet 18, 50, 152",
+    help="RESNET MODEL",
 )
 parser.add_argument(
     "--ip",
@@ -130,7 +111,7 @@ else:
     print("Unkown RESNET, running simple cnn")
     net = Net().to(DEVICE)
 
-trainloader, testloader = load_data(partition_id=partition_id)
+
 
 
 # Define Flower client
