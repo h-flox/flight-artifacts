@@ -57,7 +57,7 @@ def main(args: argparse.Namespace):
         "label": "local-htex",
         "max_workers_per_node": args.max_workers,
         "provider": LocalProvider(
-            worker_init="source ~/setup_parsl_test_env.sh; export PYTHONPATH=/home/yadunand/flox-scaling-tests/parsl-tests:$PYTHONPATH"
+            worker_init="source ~/setup_parsl_test_env.v2.sh; export PYTHONPATH=/home/yadunand/flox-scaling-tests/parsl-tests:$PYTHONPATH"
         ),
     }
     parsl_remote = {
@@ -90,19 +90,6 @@ def main(args: argparse.Namespace):
     elif args.model == 152:
         flox_model = resnet152(weights=None)
 
-
-    m = None
-    if args.model == 0:
-        m=None
-    elif args.model == 1:
-        m = KyleNet()
-    elif args.model == 18:
-         m=resnet18(weights=None)
-    elif args.model == 50:
-         m=resnet50(weights=None)
-    elif args.model == 152:
-         m=resnet152(weights=None)
-
     flox.federated_fit(
         flock=flock,
         module=flox_model,
@@ -114,7 +101,6 @@ def main(args: argparse.Namespace):
         debug_mode=True,
         launcher_kind=args.executor,
         launcher_cfg=parsl_config,
-        redis_ip_address=address_by_interface('ib0'),
     )
 
 

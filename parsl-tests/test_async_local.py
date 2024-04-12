@@ -3,7 +3,6 @@ import argparse
 import time
 import torch
 import flox
-from parsl.addresses import address_by_interface
 
 from pathlib import Path
 
@@ -11,11 +10,11 @@ from torch import nn
 from torch.nn import functional as F
 from torchvision import transforms
 from torchvision.datasets import FashionMNIST
-from torchvision.models import squeezenet1_0
 
 from flox.data.utils import federated_split
 from flox.flock.factory import create_standard_flock
 from flox.nn import FloxModule
+from flox.strategies import load_strategy
 
 import parsl
 from parsl.app.app import python_app, bash_app
@@ -57,7 +56,7 @@ def main(args: argparse.Namespace):
         "label": "local-htex",
         "max_workers_per_node": args.max_workers,
         "provider": LocalProvider(
-            worker_init="source ~/setup_parsl_test_env.sh; export PYTHONPATH=/home/yadunand/flox-scaling-tests/parsl-tests:$PYTHONPATH"
+            worker_init="export PYTHONPATH=/home/yadunand/flox-scaling-tests/parsl-tests:$PYTHONPATH"
         ),
     }
     parsl_remote = {
@@ -81,8 +80,6 @@ def main(args: argparse.Namespace):
         flox_model = None
     elif args.model == 1:
         flox_model = KyleNet()
-    elif args.model == 3:
-        flox_model = squeezenet1_0(weights=None)
     elif args.model == 18:
         flox_model = resnet18(weights=None)
     elif args.model == 50:
@@ -90,31 +87,17 @@ def main(args: argparse.Namespace):
     elif args.model == 152:
         flox_model = resnet152(weights=None)
 
-
-    m = None
-    if args.model == 0:
-        m=None
-    elif args.model == 1:
-        m = KyleNet()
-    elif args.model == 18:
-         m=resnet18(weights=None)
-    elif args.model == 50:
-         m=resnet50(weights=None)
-    elif args.model == 152:
-         m=resnet152(weights=None)
-
     flox.federated_fit(
         flock=flock,
         module=flox_model,
         # datasets=fed_data,
         datasets=None,
         num_global_rounds=args.rounds,
-        strategy="fedsgd",
-        kind="sync-v2",
+        strategy=load_strategy("fedasync", alpha=0.5),
+        kind="async",
         debug_mode=True,
         launcher_kind=args.executor,
         launcher_cfg=parsl_config,
-        redis_ip_address=address_by_interface('ib0'),
     )
 
 
@@ -142,7 +125,7 @@ if __name__ == "__main__":
     args.add_argument("--root_dir", "-d", type=str, default=".")
     args.add_argument(
         "--model",
-        choices=[0, 1, 3, 18, 50, 152],
+        choices=[0, 1, 18, 50, 152],
         required=True,
         type=int,
         help="Model: 0 - 1 layer, 1 KyleNet, Resnet 18, 50, 152",
