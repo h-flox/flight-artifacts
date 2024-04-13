@@ -22,7 +22,7 @@ from parsl.providers import SlurmProvider
 from parsl.executors import HighThroughputExecutor
 
 from torchvision.models import alexnet, resnet18, resnet50, resnet152
-from kylenet.kylenet import KyleNet
+from smallnet.smallnet import SmallNet
 
 class Net(FloxModule):
     """Model (simple CNN adapted from 'PyTorch: A 60 Minute Blitz')"""

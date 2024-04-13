@@ -24,7 +24,7 @@ from parsl.providers import SlurmProvider, LocalProvider
 from parsl.executors import HighThroughputExecutor
 
 from torchvision.models import alexnet, resnet18, resnet50, resnet152
-from flox_classes import Net, KyleNet
+from flox_classes import Net, SmallNet
 
 
 def main(args: argparse.Namespace):
@@ -79,7 +79,7 @@ def main(args: argparse.Namespace):
     if args.model == 0:
         flox_model = None
     elif args.model == 1:
-        flox_model = KyleNet()
+        flox_model = SmallNet()
     elif args.model == 3:
         flox_model = squeezenet1_0(weights=None)
     elif args.model == 18:

@@ -11,7 +11,6 @@ from torch.utils.data import DataLoader
 from torchvision.transforms import Compose, Normalize, ToTensor
 from tqdm import tqdm
 from torchvision.models import resnet18, resnet50, resnet152
-from torchvision.models import squeezenet1_0
 
 # #############################################################################
 # 1. Regular PyTorch pipeline: nn.Module, train, test, and DataLoader
@@ -21,24 +20,11 @@ warnings.filterwarnings("ignore", category=UserWarning)
 DEVICE = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
 
-class Net(torch.nn.Module):
-    """
-    A very lightweight ``FloxModule`` implementation that is used for lightweight debugging.
-    """
-
-    def __init__(self):
-        super().__init__()
-        self.model = torch.nn.Sequential(torch.nn.Linear(1, 1))
-
-    def forward(self, x):
-        return self.model(x)
-
-
-class KyleNet(nn.Module):
+class Net(nn.Module):
     """Model (simple CNN adapted from 'PyTorch: A 60 Minute Blitz')"""
 
     def __init__(self) -> None:
-        super().__init__()
+        super(Net, self).__init__()
         self.conv1 = nn.Conv2d(3, 6, 5)
         self.pool = nn.MaxPool2d(2, 2)
         self.conv2 = nn.Conv2d(6, 16, 5)
@@ -120,7 +106,7 @@ parser.add_argument(
 )
 parser.add_argument(
     "--model",
-    choices=[0, 1, 3, 18, 50, 152],
+    choices=[0, 1, 18, 50, 152],
     required=True,
     type=int,
     help="Model: 0 - 1 layer, 1 KyleNet, Resnet 18, 50, 152",
@@ -140,10 +126,6 @@ elif model_id ==50:
     net = resnet50(weights=None).to(DEVICE)
 elif model_id == 152:
     net = resnet152(weights=None).to(DEVICE)
-elif model_id == 1:
-    net = KyleNet().to(DEVICE)
-elif model_id == 3:
-    net = squeezenet1_0(weights=None)
 else: 
     print("Unkown RESNET, running simple cnn")
     net = Net().to(DEVICE)

@@ -6,14 +6,29 @@ from dataclasses import dataclass, field
 from pathlib import Path
 from pprint import pprint
 from typing import TypeAlias
-from const import *
 
 Record: TypeAlias = t.Mapping[str, t.Any]
+
+MODEL_CODE_TO_NAME: dict[int, str] = {
+    0: "DebugNet",
+    1: "KyleNet",
+    3: "SqueezeNet",
+    18: "ResNet-18",
+    50: "ResNet-50",
+    152: "ResNet-152",
+}
+
+MODEL_NAME_TO_CODE: dict[str, int] = {
+    name: code
+    for code, name in MODEL_CODE_TO_NAME.items()
+}
 
 ###################################################
 
 
-def _filter_parsl_results(data_dirs: Path | t.Iterable[Path]) -> t.Iterator[Path]:
+def _filter_parsl_results(
+    data_dirs: Path | t.Iterable[Path]
+) -> t.Iterator[Path]:
     if not isinstance(data_dirs, c.abc.Iterable):
         data_dirs = [data_dirs]
 
@@ -103,7 +118,7 @@ class FlwrTime:
 FLWR_TIME_NORMALIZER = 1e9
 
 
-def params_from_path(path: Path) -> dict[str, t.Any]:
+def _flower_params_from_path(path: Path) -> dict[str, t.Any]:
     if "single_node" in str(path):
         # pattern: 'flower_time_<model>_<workers>_*.txt'
         kind = "single_node"
@@ -150,7 +165,7 @@ def _server_result_mask(filename: str) -> bool:
     return "exp-" not in filename
 
 
-def parse_flower_single_node_results(data_dirs: t.Iterable[Path] | Path):
+def parse_flower_results(data_dirs: t.Iterable[Path] | Path):
     if not isinstance(data_dirs, c.abc.Iterable):
         data_dirs = [data_dirs]
 
@@ -159,7 +174,7 @@ def parse_flower_single_node_results(data_dirs: t.Iterable[Path] | Path):
     for d in data_dirs:
         for filename in d.glob("*.txt"):
             _time = FlwrTime()
-            params = params_from_path(filename)
+            params = _flower_params_from_path(filename)
             with open(filename, "r") as f:
                 lines = f.readlines()
                 assert len(lines) <= 2
@@ -195,9 +210,8 @@ def parse_flower_single_node_results(data_dirs: t.Iterable[Path] | Path):
 if __name__ == "__main__":
     from pathlib import Path
 
-    df = parse_flower_single_node_results([
-        # Path("flower_results/single_node/"),
+    df = parse_flower_results([
         Path("flower_results/multi_node/"),
     ])
-    # print(df.head())
     print(df.query("workers > 128").head())
+    

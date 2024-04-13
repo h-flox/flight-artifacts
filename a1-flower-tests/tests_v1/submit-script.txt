@@ -1,0 +1,14 @@
+#!/bin/bash
+#SBATCH --job-name="flower-test"
+#SBATCH --output="flower-test-out.%j.%N.out"
+#SBATCH --partition=debug
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=4
+#SBATCH --mem=0 
+#SBATCH --account=TG-CCR180005
+#SBATCH --export=ALL
+#SBATCH -t 00:30:00
+
+conda load flower-test
+./client-run.sh
+

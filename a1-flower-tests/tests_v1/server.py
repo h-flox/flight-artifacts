@@ -1,5 +1,5 @@
 from typing import List, Tuple
-from time import time
+
 import flwr as fl
 from flwr.common import Metrics
 import argparse
@@ -23,38 +23,19 @@ parser.add_argument(
     type=int,
     help="Number of clientsi")
 
-#num_clients = parser.parse_args().clients
-parser.add_argument(
-    "--ip",
-    required=True,
-    type=str,
-    help="ip address")
+num_clients = parser.parse_args().clients
 
-parser.add_argument(
-    "--model",
-    default=18,
-    type=int,
-    help="model num/id"
-)
 
-args = parser.parse_args()
 # Define strategy
-strategy = fl.server.strategy.FedAvg(
-        evaluate_metrics_aggregation_fn=weighted_average, 
-        min_available_clients=args.clients, 
-        min_fit_clients=args.clients)
+strategy = fl.server.strategy.FedAvg(evaluate_metrics_aggregation_fn=weighted_average, 
+        min_available_clients=num_clients, 
+        min_fit_clients=num_clients)
 
 
 
 # Start Flower server
 fl.server.start_server(
-    server_address=args.ip+":9898",
+    server_address="0.0.0.0:9898",
     config=fl.server.ServerConfig(num_rounds=1),
     strategy=strategy,
 )
-
-
-
-end = time()*1_000_000_000 #this to get it into nanoseconds
-with open(f'flower_time_{args.model}_{args.clients}.txt','w') as f:
-    f.write("{:0.8f}".format(end))
