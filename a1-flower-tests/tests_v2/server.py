@@ -14,6 +14,7 @@ from torchvision.transforms import Compose, Normalize, ToTensor
 from tqdm import tqdm
 from torchvision.models import resnet18, resnet50, resnet152
 
+
 class Net(nn.Module):
     """Model (simple CNN adapted from 'PyTorch: A 60 Minute Blitz')"""
 
@@ -35,11 +36,12 @@ class Net(nn.Module):
         return self.fc3(x)
 
 
-
 model = Net()
+
 
 def get_parameters(model) -> List[np.ndarray]:
     return [val.cpu().numpy() for _, val in model.state_dict().items()]
+
 
 # Get initial model parameters
 initial_model_parameters = get_parameters(model)
@@ -55,39 +57,32 @@ def weighted_average(metrics: List[Tuple[int, Metrics]]) -> Metrics:
     return {"accuracy": sum(accuracies) / sum(examples)}
 
 
-
 # Get partition id
 parser = argparse.ArgumentParser(description="Flower")
-parser.add_argument(
-    "--clients",
-    required=True,
-    type=int,
-    help="Number of clientsi")
+parser.add_argument("--clients", required=True, type=int, help="Number of clientsi")
 
-parser.add_argument("--ip",
-        required=True,
-        type=str,
-        help="ip address")
+parser.add_argument("--ip", required=True, type=str, help="ip address")
 num_clients = parser.parse_args().clients
 ip = parser.parse_args().ip
 
 
 # Define strategy
-strategy = fl.server.strategy.FedAvg(evaluate_metrics_aggregation_fn=weighted_average, 
-        min_available_clients=num_clients, 
-        min_fit_clients=num_clients,
-        initial_parameters=initial_model_parameters)
-
+strategy = fl.server.strategy.FedAvg(
+    evaluate_metrics_aggregation_fn=weighted_average,
+    min_available_clients=num_clients,
+    min_fit_clients=num_clients,
+    initial_parameters=initial_model_parameters,
+)
 
 
 # Start Flower server
 fl.server.start_server(
-    server_address=ip+":9898",
+    server_address=ip + ":9898",
     config=fl.server.ServerConfig(num_rounds=1),
     strategy=strategy,
 )
-print('hi')
+print("hi")
 end = time()
 print(end)
-with open('flower_test_'+str(num_clients)+'_'+str(18)+'.txt','w') as f:
+with open("flower_test_" + str(num_clients) + "_" + str(18) + ".txt", "w") as f:
     f.write(str(end))

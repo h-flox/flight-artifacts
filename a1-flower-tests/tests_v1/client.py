@@ -71,23 +71,23 @@ def test(net, testloader):
 
 def load_data(partition_id):
     """Load partition CIFAR10 data."""
-    #fds = FederatedDataset(dataset="cifar10", partitioners={"train": 3})
-    #partition = fds.load_partition(partition_id)
+    # fds = FederatedDataset(dataset="cifar10", partitioners={"train": 3})
+    # partition = fds.load_partition(partition_id)
     # Divide data on each node: 80% train, 20% test
-    #partition_train_test = partition.train_test_split(test_size=0.2)
-    #pytorch_transforms = Compose(
+    # partition_train_test = partition.train_test_split(test_size=0.2)
+    # pytorch_transforms = Compose(
     #    [ToTensor(), Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5))]
-    #)
+    # )
 
-    #def apply_transforms(batch):
+    # def apply_transforms(batch):
     #    """Apply transforms to the partition from FederatedDataset."""
     #    batch["img"] = [pytorch_transforms(img) for img in batch["img"]]
     #    return batch
 
-    #partition_train_test = partition_train_test.with_transform(apply_transforms)
-    #trainloader = DataLoader(partition_train_test["train"], batch_size=32, shuffle=True)
-    #testloader = DataLoader(partition_train_test["test"], batch_size=32)
-    #return trainloader, testloader
+    # partition_train_test = partition_train_test.with_transform(apply_transforms)
+    # trainloader = DataLoader(partition_train_test["train"], batch_size=32, shuffle=True)
+    # testloader = DataLoader(partition_train_test["test"], batch_size=32)
+    # return trainloader, testloader
     return DataLoader([0]), DataLoader([0])
 
 
@@ -119,14 +119,14 @@ partition_id = parser.parse_args().partition_id
 model_id = parser.parse_args().model
 ip = parser.parse_args().ip
 # Load model and data (simple CNN, CIFAR-10)
-#net = Net().to(DEVICE)
+# net = Net().to(DEVICE)
 if model_id == 18:
     net = resnet18(weights=None).to(DEVICE)
-elif model_id ==50:
+elif model_id == 50:
     net = resnet50(weights=None).to(DEVICE)
 elif model_id == 152:
     net = resnet152(weights=None).to(DEVICE)
-else: 
+else:
     print("Unkown RESNET, running simple cnn")
     net = Net().to(DEVICE)
 
@@ -148,7 +148,7 @@ class FlowerClient(fl.client.NumPyClient):
         train(net, trainloader, epochs=0)
         return self.get_parameters(config={}), len(trainloader.dataset), {}
 
-    #def evaluate(self, parameters, config):
+    # def evaluate(self, parameters, config):
     #    self.set_parameters(parameters)
     #    loss, accuracy = test(net, testloader)
     #    return loss, len(testloader.dataset), {"accuracy": accuracy}
@@ -156,7 +156,7 @@ class FlowerClient(fl.client.NumPyClient):
 
 # Start Flower client
 fl.client.start_client(
-    #server_address="198.202.100.14:9898",
+    # server_address="198.202.100.14:9898",
     server_address="%s:9898" % ip,
     client=FlowerClient().to_client(),
 )

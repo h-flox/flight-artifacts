@@ -4,6 +4,7 @@ import flwr as fl
 from flwr.common import Metrics
 import argparse
 
+
 # Define metric aggregation function
 def weighted_average(metrics: List[Tuple[int, Metrics]]) -> Metrics:
     # Multiply accuracy of each client by number of examples used
@@ -14,23 +15,19 @@ def weighted_average(metrics: List[Tuple[int, Metrics]]) -> Metrics:
     return {"accuracy": sum(accuracies) / sum(examples)}
 
 
-
 # Get partition id
 parser = argparse.ArgumentParser(description="Flower")
-parser.add_argument(
-    "--clients",
-    required=True,
-    type=int,
-    help="Number of clientsi")
+parser.add_argument("--clients", required=True, type=int, help="Number of clientsi")
 
 num_clients = parser.parse_args().clients
 
 
 # Define strategy
-strategy = fl.server.strategy.FedAvg(evaluate_metrics_aggregation_fn=weighted_average, 
-        min_available_clients=num_clients, 
-        min_fit_clients=num_clients)
-
+strategy = fl.server.strategy.FedAvg(
+    evaluate_metrics_aggregation_fn=weighted_average,
+    min_available_clients=num_clients,
+    min_fit_clients=num_clients,
+)
 
 
 # Start Flower server

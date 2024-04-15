@@ -69,9 +69,6 @@ def test(net, testloader):
     return loss, accuracy
 
 
-
-
-
 # #############################################################################
 # 2. Federation of the pipeline with Flower
 # #############################################################################
@@ -100,18 +97,16 @@ partition_id = parser.parse_args().partition_id
 model_id = parser.parse_args().model
 ip = parser.parse_args().ip
 # Load model and data (simple CNN, CIFAR-10)
-#net = Net().to(DEVICE)
+# net = Net().to(DEVICE)
 if model_id == 18:
     net = resnet18(weights=None).to(DEVICE)
-elif model_id ==50:
+elif model_id == 50:
     net = resnet50(weights=None).to(DEVICE)
 elif model_id == 152:
     net = resnet152(weights=None).to(DEVICE)
-else: 
+else:
     print("Unkown RESNET, running simple cnn")
     net = Net().to(DEVICE)
-
-
 
 
 # Define Flower client
@@ -129,7 +124,7 @@ class FlowerClient(fl.client.NumPyClient):
         train(net, trainloader, epochs=0)
         return self.get_parameters(config={}), len(trainloader.dataset), {}
 
-    #def evaluate(self, parameters, config):
+    # def evaluate(self, parameters, config):
     #    self.set_parameters(parameters)
     #    loss, accuracy = test(net, testloader)
     #    return loss, len(testloader.dataset), {"accuracy": accuracy}
@@ -137,7 +132,7 @@ class FlowerClient(fl.client.NumPyClient):
 
 # Start Flower client
 fl.client.start_client(
-    #server_address="198.202.100.14:9898",
+    # server_address="198.202.100.14:9898",
     server_address="%s:9898" % ip,
     client=FlowerClient().to_client(),
 )
