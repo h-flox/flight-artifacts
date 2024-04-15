@@ -1,26 +1,43 @@
-# Getting Started
+README
+======
 
-There is a version for on `pydantic` between two dependencies:
-1. `globus_compute_sdk`
-2. `proxystore`
 
-The easiest solution to get around this is to _first_ install the necessary libraries via
-```sh
-pip install -r requirements.txt
+Please install all dependencies into a conda environment with:
+
+```
+conda create --name parsl_py3.11 python=3.11
+conda activate parsl_py3.11
+echo "conda activate parsl_py3.11" > ~/setup_parsl_test_env.sh
+(parsl_py3.10) pip install -r requirements.txt
+(parsl_py3.10) pip install --no-deps pydantic==2.6.3
 ```
 
-Then, you will want to install `proxystore` via:
-```sh
-pip install "proxystore[all]"
+Experiment 1: FloX with Parsl
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To run a single instance of the experiment on a singenode to sanity-check
+
+``` bash
+# model 3 is SqueezeNet, singlenode launches workers on the same node
+python test.py --config singlenode --max_workers 2 --model 0 --executor parsl
 ```
 
-Then end with:
-```sh
-pip install pydantic==2.6.3
+To launch the complete experiment on SDSC Expanse2
 ```
-> This should already have been done from installing `proxystore`, but just for good measure.
+bash launch_parsl.sh
+```
 
-***
+Experiment 2: Flox with Parsl+RedisConnector
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-As far as we can see, this does not cause any actual issues. There will be an annoying `UserWarning` 
-thrown by `pydantic` from `funcx_common`, but no code-breaking issues.
+
+```
+redis-server /home/yadunand/flox-scaling-tests/parsl-tests/redis.conf &
+python test.py --config multinode --max_workers 4 --model 3 --executor parsl
+```
+
+Launch the complete set of experiments on SDSC Expanse2
+
+```
+bash launch_parsl_redisconnector.sh
+```
