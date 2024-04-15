@@ -1,4 +1,5 @@
-# flox-scaling-tests
+# SC24-FLoX-Artifacts
+
 This repository presents the source code for the **scaling tests for the following paper**:
 > John Smith, et al. "{title goes here}." Some Venue (YYYY).
 
