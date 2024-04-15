@@ -100,7 +100,7 @@ def main(args: argparse.Namespace):
         debug_mode=True,
         launcher_kind=args.executor,
         launcher_cfg=parsl_config,
-        redis_ip_address=address_by_interface("ib0"),
+        redis_ip_address="127.0.0.1",
     )
 
 

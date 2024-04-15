@@ -64,7 +64,7 @@ def main(args: argparse.Namespace):
         "max_workers_per_node": min(128, args.max_workers),
         "provider": LocalProvider(
             launcher=SrunLauncher(overrides="--exclude=$SLURMD_NODENAME"),
-            worker_init="source ~/setup_parsl_test_env.sh; export PYTHONPATH=/home/yadunand/flox-scaling-tests/parsl-tests:$PYTHONPATH",
+            worker_init="source ~/setup_parsl_redis_test_env.sh; export PYTHONPATH=/home/yadunand/flox-scaling-tests/parsl-tests:$PYTHONPATH",
             init_blocks=1,
         ),
     }
@@ -97,7 +97,7 @@ def main(args: argparse.Namespace):
         debug_mode=True,
         launcher_kind=args.executor,
         launcher_cfg=parsl_config,
-        redis_ip_address="127.0.0.1",
+        redis_ip_address=address_by_interface("ib0"),
     )
 
 

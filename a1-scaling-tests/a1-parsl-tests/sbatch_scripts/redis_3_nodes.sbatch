@@ -20,6 +20,6 @@ for model in 0 1 3 18 50 152
 do
     for workers in 2 4 8 16 32 64 128
     do
-	timeout 1000 python test.py --config multinode --max_workers $workers --model $model --executor parsl &> redis_$model.$workers.stdout
+	timeout 1000 python test_redis.py --config multinode --max_workers $workers --model $model --executor parsl &> redis_$model.$workers.stdout
     done
 done

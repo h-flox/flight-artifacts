@@ -22,7 +22,7 @@ docutils==0.20.1
 exceptiongroup==1.2.0
 filelock==3.13.1
 Flask==3.0.2
-flox @ git+https://github.com/nathaniel-hudson/flox@a437daed1d6d2e9fd792c43393403af98ac01b9a
+flox @ git+https://github.com/h-flox/sc24-flox.git
 fonttools==4.50.0
 fsspec==2024.3.1
 globus-compute-common==0.3.0
