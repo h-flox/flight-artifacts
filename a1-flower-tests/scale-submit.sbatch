@@ -20,6 +20,6 @@ for num_nodes in 2 4; do
 
 	timeout 600 python /home/chard/flox-scaling-tests/a1-flower-tests/server.py --clients $((128 * $num_nodes)) --ip $ipad --model 3 &
 
-	srun --ntasks $num_nodes -l --exclude=$SLURMD_NODENAME /home/chard/flox-scaling-tests/a1-flower-tests/scale-run.sh 128 3 $ipad $num_nodes
+	srun --ntasks $num_nodes -l --exclude=$SLURMD_NODENAME /home/chard/flox-scaling-tests/a1-flower-tests/run-client.sh 128 3 $ipad $num_nodes
 	wait
 done

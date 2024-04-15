@@ -115,9 +115,11 @@ parser.add_argument(
 partition_id = parser.parse_args().partition_id
 model_id = parser.parse_args().model
 ip = parser.parse_args().ip
-if model_id == 18:
+if model_id == 0:
+    net = Net().to(DEVICE)
+elif model_id == 18:
     net = resnet18(weights=None).to(DEVICE)
-elif model_id == 50:
+elif model_id ==50:
     net = resnet50(weights=None).to(DEVICE)
 elif model_id == 152:
     net = resnet152(weights=None).to(DEVICE)
@@ -125,7 +127,7 @@ elif model_id == 1:
     net = KyleNet().to(DEVICE)
 elif model_id == 3:
     net = squeezenet1_0(weights=None)
-else:
+else: 
     print("Unkown RESNET, running simple cnn")
     net = Net().to(DEVICE)
 
@@ -150,7 +152,7 @@ class FlowerClient(fl.client.NumPyClient):
 
 # Start Flower client
 fl.client.start_client(
-    # server_address="198.202.100.14:9898",
+    #server_address="198.202.100.14:9898",
     server_address="%s:9898" % ip,
     client=FlowerClient().to_client(),
 )

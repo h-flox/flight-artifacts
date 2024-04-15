@@ -15,10 +15,11 @@ echo $ipad
 
 /bin/bash
 /home/chard/miniconda3/bib/conda activate flower-test
+
 for num_workers in 1 2 4 8 16 32 64 128; do
 
 	timeout 600 python /home/chard/flox-scaling-tests/a1-flower-tests/server.py --clients $num_workers --ip $ipad --model 3 &
 
-	srun --ntasks 1 -l --exclude=$SLURMD_NODENAME /home/chard/flox-scaling-tests/a1-flower-tests/client-run.sh $num_workers 3 $ipad
+	srun --ntasks 1 -l --exclude=$SLURMD_NODENAME /home/chard/flox-scaling-tests/a1-flower-tests/run-client.sh $num_workers 3 $ipad
 	wait
 done
