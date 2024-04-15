@@ -3,8 +3,8 @@
 #SBATCH --job-name=Parsl.test
 #SBATCH --output=/home/yadunand/flox-scaling-tests/parsl-tests/single_node.stdout
 #SBATCH --error=/home/yadunand/flox-scaling-tests/parsl-tests/single_node.stdout
-#SBATCH --nodes=3
-#SBATCH --time=00:10:00
+#SBATCH --nodes=17
+#SBATCH --time=01:00:00
 #SBATCH --ntasks-per-node=1
 #SBATCH --exclusive
 #SBATCH --partition=compute
@@ -12,14 +12,11 @@
 
 
 source ~/setup_parsl_test_env.sh
-rm *rdb
-# Disable auth and bind to all interfaces
-redis-server /home/yadunand/flox-scaling-tests/parsl-tests/redis.conf &
-    
-for model in 0
+
+for model in 0 1 3 18 50 152
 do
-    for workers in 256
+    for workers in 2048
     do
-	timeout 200 python test.py --config multinode --max_workers $workers --model $model --executor parsl &> redis_$model.$workers.stdout
+	timeout 600 python test.py --config multinode --max_workers $workers --model $model --executor parsl &> sync_$model.$workers.stdout
     done
 done
