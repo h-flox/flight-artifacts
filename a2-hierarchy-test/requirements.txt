@@ -49,7 +49,7 @@ fabric==3.2.2
 fastjsonschema==2.19.1
 filelock==3.13.3
 Flask==3.0.2
-flox @ git+https://github.com/nathaniel-hudson/flox@ee941f4d7f99464f744d3c13525f32ad08cf6a97
+flox @ git+git+htttps://github.com/h-flox/flox@sc24
 fonttools==4.49.0
 fqdn==1.5.1
 fsspec==2024.3.1
