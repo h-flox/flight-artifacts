@@ -161,7 +161,7 @@ prettytable==3.10.0
 priority==2.0.0
 prometheus_client==0.20.0
 prompt-toolkit==3.0.43
-proxystore @ git+https://github.com/proxystore/proxystore@9babc7f6e3da4d88e9359d915b4f293f7b26a454
+proxystore==0.6.4
 proxystore-ex==0.1.2
 psutil==5.9.8
 ptyprocess==0.7.0
