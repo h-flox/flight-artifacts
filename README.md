@@ -1,9 +1,9 @@
-# SC24-FLoX-Artifacts
+# Flight Artifacts
 
 This repository presents the source code for the **scaling tests for the following paper**:
 > John Smith, et al. "{title goes here}." Some Venue (YYYY).
 
-These scaling tests involve benchmarks using our own **FLoX** federated learning framework and the
+These scaling tests involve benchmarks using our own **Flight** federated learning framework and the
 [**Flower**](https://flower.ai) framework.
 
 ## General Setup
@@ -38,7 +38,7 @@ This will download the dataset using `torchvision.datasets`.
 
 ### Artifact 1: Scaling Tests
 
-#### Artifact 1.1: FLoX Scaling Tests with Parsl
+#### Artifact 1.1: Flight Scaling Tests with Parsl
 ...
 
 #### Artifact 1.2: Flower Scaling Tests
