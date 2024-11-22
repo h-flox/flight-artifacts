@@ -1,7 +1,16 @@
 # Flight Artifacts
 
-This repository presents the source code for the **scaling tests for the following paper**:
-> John Smith, et al. "{title goes here}." Some Venue (YYYY).
+This repository presents the source code for the experimental tests for the following paper:
+> Hudson, N., Hayot-Sasson, V., Babuji, Y., Baughman, M., Pauloski, J. G., Chard, R., ... & Chard, K. (2024). Flight: A FaaS-Based Framework for Complex and Hierarchical Federated Learning. arXiv preprint arXiv:2409.16495.
+
+```bibtex
+@article{hudson2024flight,
+  title={Flight: A FaaS-Based Framework for Complex and Hierarchical Federated Learning},
+  author={Hudson, Nathaniel and Hayot-Sasson, Valerie and Babuji, Yadu and Baughman, Matt and Pauloski, J Gregory and Chard, Ryan and Foster, Ian and Chard, Kyle},
+  journal={arXiv preprint arXiv:2409.16495},
+  year={2024}
+}
+```
 
 These scaling tests involve benchmarks using our own **Flight** federated learning framework and the
 [**Flower**](https://flower.ai) framework.
@@ -39,17 +48,19 @@ This will download the dataset using `torchvision.datasets`.
 ### Artifact 1: Scaling Tests
 
 #### Artifact 1.1: Flight Scaling Tests with Parsl
-...
+Weak-scaling tests using our proposed Flight framework on HPC systems with Parsl.
+These tests use Parsl's default data transfer implementation in addition to Redis (via Proxystore) as separate tests.
 
 #### Artifact 1.2: Flower Scaling Tests
-...
+Weak-scaling tests for the Flower framework.
 
 ### Artifact 2: Hierarchy Simulation Test
-...
+Tests that simulate hierarchical federated learning with Flight.
+Calculations of communication costs are also included.
 
 ### Artifact 3: Asynchronous Simulation Test
-...
+Tests that compare synchronous and asynchronous federated learning with Flight.
 
 ### Artifact 4: Remote EC2 Test
-...
+Remote execution tests prepared for Amazon EC2 instances.
 
